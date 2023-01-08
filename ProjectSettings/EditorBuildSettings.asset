@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/AssetStore/Game Show Asset Pack/Scenes/GameShowDemoScene.unity
+    guid: b5f5cb97aed4fa443a1392bfe9462c3e
   m_configObjects: {}

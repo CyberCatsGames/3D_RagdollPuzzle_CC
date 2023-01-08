@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4996062177786785988}
   - component: {fileID: 4996062177786785992}
   - component: {fileID: 4996062177786785999}
+  - component: {fileID: 929902013}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4996062177786785989}
-  m_LocalRotation: {x: -0, y: -0.72327846, z: -0, w: 0.69055647}
+  m_LocalRotation: {x: 0, y: -0.72328055, z: 0, w: 0.6905543}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 19.220827, y: 19.220827, z: 19.220827}
   m_ConstrainProportionsScale: 0
@@ -125,7 +126,7 @@ VideoPlayer:
   - {fileID: 4996062177786785999}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: https://rr4---sn-jvhnu5g-c35l.googlevideo.com/videoplayback?expire=1673227323&ei=2xe7Y-fBB4XA7QTn2IzwBQ&ip=79.139.175.122&id=o-AB3svOV4Tnd9XnMCyIjxJt9pW_7Eq-OA9kBy0m3NcpuA&itag=22&source=youtube&requiressl=yes&mh=2m&mm=31%2C29&mn=sn-jvhnu5g-c35l%2Csn-n8v7znsz&ms=au%2Crdu&mv=m&mvi=4&pl=23&initcwndbps=641250&vprv=1&mime=video%2Fmp4&ns=Ps1660dwBYoPAABhKJWO58QK&cnr=14&ratebypass=yes&dur=706.118&lmt=1673189200039085&mt=1673205216&fvip=16&fexp=24007246&c=WEB&txp=6218224&n=byvbM5sHa_BZ3-WvQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgNQwj8ZwgYFq6CQXtR8N6zlWJhxk7Gj7A0_eenkgY8B0CIBQvb7fyFL_kyQaZH3sYRDyeBRZpG68eZ0p4ts6yn9yn&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgVGeK1hZoq_IoT65tiMJWMZYAlksx5SAm0SJpRFgV8mACIQDLuQaZ1FYAHfQ_XCCpv0qaKXWoBAD2hIKRBcu-yZiXeA%3D%3D
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -231,3 +232,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &929902013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4996062177786785989}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974db69e406cd254da55fe331c4b3d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _url: https://rr4---sn-jvhnu5g-c35l.googlevideo.com/videoplayback?expire=1673227540&ei=tBi7Y_LmLcmwyAWL0ZiIDQ&ip=79.139.175.122&id=o-AAqoo6kkOSDlA_1sLHiCfy9jwj5ydro7MjmFzwXsgvqL&itag=22&source=youtube&requiressl=yes&mh=2m&mm=31%2C29&mn=sn-jvhnu5g-c35l%2Csn-n8v7znsz&ms=au%2Crdu&mv=m&mvi=4&pl=23&initcwndbps=660000&vprv=1&mime=video%2Fmp4&ns=DZpxEY2qiC3vplZZyCtAk9gK&cnr=14&ratebypass=yes&dur=706.118&lmt=1673189200039085&mt=1673205458&fvip=16&fexp=24007246&c=WEB&txp=6218224&n=uxodwdmWZe8c-GsqB&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgAhPrd-qyFXGJeYf1-EPouVjQ3tqFQX_VH4kmh0fmB6sCICoPok43VSGMlOFmcbjsVbt-vN5KvsCNe-pe9Y9hKdzY&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgBwQunt6ly-I5oM53g7egrb8HY9DrutCDN1HSq3np46YCIQDanHCEPZMTwB49U-rPfi5xn2ZKgAkWTjguPGXiYjugNA%3D%3D

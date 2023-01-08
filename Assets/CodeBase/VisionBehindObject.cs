@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace CodeBase
 {
@@ -14,7 +15,7 @@ namespace CodeBase
             Vector3 direction = _player.position - transform.position;
             float distance = Vector3.Distance(_player.position, transform.position);
             Debug.DrawRay(transform.position, direction.normalized * distance, Color.red);
-            
+
             if (Physics.Raycast(transform.position, direction, out RaycastHit hit, distance, _layer))
             {
                 Transparent transparent = hit.transform.GetComponent<Transparent>();

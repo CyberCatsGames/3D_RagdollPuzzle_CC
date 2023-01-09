@@ -3,7 +3,17 @@ guid: 76c68e70cb6d7f6439a7456fa8ab7841
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C__Users_JK_Desktop_NARUTO_ULTI
+    second: {fileID: 2100000, guid: 86808eb761199f94f8cc4fd5fda923f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C__Users_JK_Desktop_NARUTO_ULTI0
+    second: {fileID: 2100000, guid: c066faf3a222dc04faecadd339fe90c5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

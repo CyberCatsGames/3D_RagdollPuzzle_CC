@@ -82,7 +82,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_EF7B90AC: 1
+    - Vector1_EF7B90AC: 0.3
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -115,7 +115,7 @@ Material:
     m_Colors:
     - Color_3C538CB1: {r: 0, g: 1.5314016, b: 2.670157, a: 0}
     - Color_643A2D30: {r: 0.15466878, g: 0.9245283, b: 0.02180491, a: 0}
-    - Vector2_258775C5: {r: 1, g: 0.5, b: 0, a: 0}
+    - Vector2_258775C5: {r: 1, g: 10, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

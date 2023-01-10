@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace RealToon.Tools.FrameByFrameRendering
+namespace RealToon.RealToon_Tools.FrameByFrameRendering
 {
     [AddComponentMenu("RealToon/Tools/Frame By Frame Rendering/Frame By Frame Rendering (Default)")]
     public class FrameByFrameRendering_Default : MonoBehaviour

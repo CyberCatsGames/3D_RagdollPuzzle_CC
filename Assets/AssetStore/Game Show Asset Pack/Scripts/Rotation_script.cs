@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 
-public class Rotation_script : MonoBehaviour
+namespace AssetStore.Game_Show_Asset_Pack.Scripts
 {
-    [SerializeField] private Vector3 _rotation;
-    // Update is called once per frame
-    void Update()
+    public class Rotation_script : MonoBehaviour
     {
-        transform.Rotate(_rotation * Time.deltaTime);
+        [SerializeField] private Vector3 _rotation;
+        // Update is called once per frame
+        void Update()
+        {
+            transform.Rotate(_rotation * Time.deltaTime);
+        }
     }
 }

@@ -2,7 +2,7 @@
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-namespace RealToon.Effects
+namespace RealToon.RealToon_Shaders.Effects.DeNorSob_Outline
 {
 
     public class DepthNormalsFeature : ScriptableRendererFeature

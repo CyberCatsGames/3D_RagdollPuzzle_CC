@@ -3272,8 +3272,8 @@ MonoBehaviour:
   jumpForce: 18
   autoGetUpWhenPossible: 1
   useStepPrediction: 1
-  balanceHeight: 1.5
-  balanceStrength: 100
+  balanceHeight: 2.5
+  balanceStrength: 500
   coreStrength: 2000
   limbStrength: 500
   StepDuration: 0.2

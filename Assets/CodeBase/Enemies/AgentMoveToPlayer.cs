@@ -8,12 +8,12 @@ namespace CodeBase.Enemies
     public class AgentMoveToPlayer : MonoBehaviour
     {
         [SerializeField] private NavMeshAgent _agent;
-        
-        private Hero _hero;
+        [SerializeField] private GameObject _hero;
 
         private void Start()
         {
-            _hero = FindObjectOfType<Hero>();
+            if (_hero == null)
+                _hero = FindObjectOfType<Hero>().gameObject;
         }
 
         private void Update()

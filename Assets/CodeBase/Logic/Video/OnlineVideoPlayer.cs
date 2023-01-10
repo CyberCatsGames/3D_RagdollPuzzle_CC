@@ -17,6 +17,7 @@ namespace CodeBase.Logic.Video
 
         private void Start()
         {
+            Color color = new Color(0.58f, 1f, 0.33f);
             _videoPlayer.url = _url;
             _videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
             _videoPlayer.EnableAudioTrack(0, true);

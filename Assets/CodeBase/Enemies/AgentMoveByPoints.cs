@@ -3,39 +3,52 @@ using UnityEngine.AI;
 
 namespace CodeBase.Enemies
 {
+    [RequireComponent(typeof(JumpToTarget))]
     [RequireComponent(typeof(NavMeshAgent))]
     public class AgentMoveByPoints : MonoBehaviour
     {
-        [SerializeField] private Transform[] _points;
-
-        private NavMeshAgent _agent;
+        private TargetPoint[] _points;
+        private JumpToTarget _jumper;
         private int _currentPointIndex;
+        private NavMeshAgent _agent;
 
         private void Awake()
         {
+            _points = GetComponentsInChildren<TargetPoint>();
+            _jumper = GetComponent<JumpToTarget>();
             _agent = GetComponent<NavMeshAgent>();
-            _agent.stoppingDistance = 0f;
 
-            foreach (Transform point in _points)
+            foreach (TargetPoint point in _points)
             {
-                point.parent = null;
+                point.transform.parent = null;
             }
         }
 
         private void Update()
         {
-            Transform targetPoint = _points[_currentPointIndex];
-
-            if (transform.EqualsByXZ(targetPoint))
+            if (_currentPointIndex >= _points.Length)
             {
-                _currentPointIndex++;
-
-                if (_currentPointIndex >= _points.Length)
-                    enabled = false;
+                enabled = false;
+                return;
             }
-            else
+
+            TargetPoint targetPoint = _points[_currentPointIndex];
+
+            switch (targetPoint)
             {
-                _agent.destination = targetPoint.position;
+                case JumpPoint:
+                    _jumper.TryJump(targetPoint.transform, () => _currentPointIndex++);
+                    break;
+                case MovePoint:
+                    if (_agent.enabled == true)
+                        _agent.destination = targetPoint.transform.position;
+
+                    if (transform.EqualsByXZRoundInt(targetPoint.transform))
+                    {
+                        _currentPointIndex++;
+                    }
+
+                    break;
             }
         }
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2685308, g: 0.46447867, b: 0.61467874, a: 1}
+  m_IndirectSpecularColor: {r: 0.26852533, g: 0.46447325, b: 0.6146784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28335,11 +28335,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010580135918, guid: d97fd84338e00b84c9810550cf9f23a4, type: 3}
   m_PrefabInstance: {fileID: 1227413615}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1229385045 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5546371107531536984, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-  m_PrefabInstance: {fileID: 1583313602}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1234614894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45554,8 +45549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e1ae5cd04b4020b63048b1442026ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _points:
-  - {fileID: 1229385045}
 --- !u!114 &1941390182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45568,14 +45561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee84e5f15ebd4b48a8d937d02d16272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  ReachedStartPointDistance: 0.5
-  DummyAgent: {fileID: 4088997838483852, guid: 44be76bf460da0e4396deecdf0eaa035, type: 3}
-  EndJumpPosition: {x: 0, y: 0, z: 0}
-  MaxJumpableDistance: 80
-  JumpTime: 0.6
-  AddToJumpHeight: 0
-  JumpStartPoint: {x: 0, y: 0, z: 0}
+  _jumpPower: 20
+  _duration: 1
 --- !u!54 &1941390183
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48388,6 +48375,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 925a7acfae452d944b93c804de4285cf, type: 3}
   m_PrefabInstance: {fileID: 2053635622}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2054603196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.026254032
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9996553
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 183.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927275936227392812, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6416005094155593622, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
+      propertyPath: m_Name
+      value: Shrek2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1933be8a68a4238459158f72c7df08b0, type: 3}
 --- !u!1001 &2058545983
 PrefabInstance:
   m_ObjectHideFlags: 0

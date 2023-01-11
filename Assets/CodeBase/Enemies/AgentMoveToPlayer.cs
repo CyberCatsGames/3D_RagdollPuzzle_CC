@@ -19,7 +19,6 @@ namespace CodeBase.Enemies
         private void Update()
         {
             _agent.destination = _hero.transform.position;
-           transform.LookAt(_hero.transform.position, Vector3.up);
         }
     }
 }

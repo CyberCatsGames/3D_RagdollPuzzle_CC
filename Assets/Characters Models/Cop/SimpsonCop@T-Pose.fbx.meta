@@ -5,6 +5,46 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_25.002
+    second: {fileID: 2100000, guid: 005462fd918ae4dfebdc4a8c4dc24e00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_27.002
+    second: {fileID: 2100000, guid: dbbea7d1a9d4044668af08266953dd4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_28.002
+    second: {fileID: 2100000, guid: 00ff743c582294635a74a80aed20199c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_40.002
+    second: {fileID: 2100000, guid: 032ae9247f42f4bbba23676ceba8664a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_53.002
+    second: {fileID: 2100000, guid: 8dc440827dad34aa59026065be8446fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_66.002
+    second: {fileID: 2100000, guid: e9f01aeb64ac9448aaf227b0908f6993, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_79.002
+    second: {fileID: 2100000, guid: d95533cc1fc9e4b50af4610d17ad51f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_92.002
+    second: {fileID: 2100000, guid: febc317e840114437b42d4b1f39258ee, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material_27_baseColor
@@ -98,7 +138,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.04
+    globalScale: 4
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

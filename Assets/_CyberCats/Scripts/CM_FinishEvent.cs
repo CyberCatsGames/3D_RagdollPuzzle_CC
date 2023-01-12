@@ -8,9 +8,17 @@ public class CM_FinishEvent : MonoBehaviour
 {
     public CinemachineDollyCart CM_Cart;
     public float StartDelay = 1f;
+    public bool ShowPreview = false;
+
 
     private void Start() {
-        Invoke(nameof(StartPath), StartDelay);
+        if (ShowPreview) {
+            Invoke(nameof(StartPath), StartDelay);
+        } else {
+            this.transform.parent = null;
+            GetComponent<CameraController>().enabled = true;
+        }
+        
     }
     private void Update() {
         if(CM_Cart.m_Position >= 1f) {

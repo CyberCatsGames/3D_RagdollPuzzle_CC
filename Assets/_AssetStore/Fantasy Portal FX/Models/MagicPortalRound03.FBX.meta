@@ -1,111 +1,311 @@
 fileFormatVersion: 2
 guid: 8d2d3d3e8ba81d34c9f495d5735a5fde
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: CirclePortal01
-    100002: CirclePortal02
-    100004: Cylinder002
-    100006: Cylinder004
-    100008: Cylinder005
-    100010: Cylinder006
-    100012: Cylinder007
-    100014: Cylinder008
-    100016: Cylinder009
-    100018: MagicPortalRound01
-    100020: MagicPortalRound03
-    100022: //RootNode
-    100024: MagicPortalRoundSt01
-    100026: MagicPortalRoundSt02
-    100028: MagicPortalRoundSt03
-    100030: PortalCylinderStand003
-    100032: PortalCylinderStand004
-    100034: PortalCylinderStand005
-    100036: PortalCylinderStand01
-    100038: PortalCylinderStand02
-    400000: CirclePortal01
-    400002: CirclePortal02
-    400004: Cylinder002
-    400006: Cylinder004
-    400008: Cylinder005
-    400010: Cylinder006
-    400012: Cylinder007
-    400014: Cylinder008
-    400016: Cylinder009
-    400018: MagicPortalRound01
-    400020: //RootNode
-    400022: MagicPortalRound03
-    400024: MagicPortalRoundSt01
-    400026: MagicPortalRoundSt02
-    400028: MagicPortalRoundSt03
-    400030: PortalCylinderStand003
-    400032: PortalCylinderStand004
-    400034: PortalCylinderStand005
-    400036: PortalCylinderStand01
-    400038: PortalCylinderStand02
-    2100000: No Name
-    2300000: CirclePortal01
-    2300002: CirclePortal02
-    2300004: Cylinder002
-    2300006: Cylinder004
-    2300008: Cylinder005
-    2300010: Cylinder006
-    2300012: Cylinder007
-    2300014: Cylinder008
-    2300016: Cylinder009
-    2300018: MagicPortalRound01
-    2300020: MagicPortalRound03
-    2300022: MagicPortalRoundSt01
-    2300024: MagicPortalRoundSt02
-    2300026: MagicPortalRoundSt03
-    2300028: PortalCylinderStand003
-    2300030: PortalCylinderStand004
-    2300032: PortalCylinderStand005
-    2300034: PortalCylinderStand01
-    2300036: PortalCylinderStand02
-    2300038: //RootNode
-    3300000: CirclePortal01
-    3300002: CirclePortal02
-    3300004: Cylinder002
-    3300006: Cylinder004
-    3300008: Cylinder005
-    3300010: Cylinder006
-    3300012: Cylinder007
-    3300014: Cylinder008
-    3300016: Cylinder009
-    3300018: MagicPortalRound01
-    3300020: MagicPortalRound03
-    3300022: MagicPortalRoundSt01
-    3300024: MagicPortalRoundSt02
-    3300026: MagicPortalRoundSt03
-    3300028: PortalCylinderStand003
-    3300030: PortalCylinderStand004
-    3300032: PortalCylinderStand005
-    3300034: PortalCylinderStand01
-    3300036: PortalCylinderStand02
-    3300038: //RootNode
-    4300000: CirclePortal01
-    4300002: Cylinder002
-    4300004: CirclePortal02
-    4300006: Cylinder004
-    4300008: PortalCylinderStand01
-    4300010: PortalCylinderStand02
-    4300012: Cylinder005
-    4300014: Cylinder006
-    4300016: Cylinder007
-    4300018: MagicPortalRound01
-    4300020: MagicPortalRoundSt01
-    4300022: MagicPortalRoundSt02
-    4300024: PortalCylinderStand003
-    4300026: Cylinder008
-    4300028: PortalCylinderStand004
-    4300030: Cylinder009
-    4300032: PortalCylinderStand005
-    4300034: MagicPortalRound03
-    4300036: MagicPortalRoundSt03
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: CirclePortal01
+  - first:
+      1: 100002
+    second: CirclePortal02
+  - first:
+      1: 100004
+    second: Cylinder002
+  - first:
+      1: 100006
+    second: Cylinder004
+  - first:
+      1: 100008
+    second: Cylinder005
+  - first:
+      1: 100010
+    second: Cylinder006
+  - first:
+      1: 100012
+    second: Cylinder007
+  - first:
+      1: 100014
+    second: Cylinder008
+  - first:
+      1: 100016
+    second: Cylinder009
+  - first:
+      1: 100018
+    second: MagicPortalRound01
+  - first:
+      1: 100020
+    second: MagicPortalRound03
+  - first:
+      1: 100022
+    second: //RootNode
+  - first:
+      1: 100024
+    second: MagicPortalRoundSt01
+  - first:
+      1: 100026
+    second: MagicPortalRoundSt02
+  - first:
+      1: 100028
+    second: MagicPortalRoundSt03
+  - first:
+      1: 100030
+    second: PortalCylinderStand003
+  - first:
+      1: 100032
+    second: PortalCylinderStand004
+  - first:
+      1: 100034
+    second: PortalCylinderStand005
+  - first:
+      1: 100036
+    second: PortalCylinderStand01
+  - first:
+      1: 100038
+    second: PortalCylinderStand02
+  - first:
+      4: 400000
+    second: CirclePortal01
+  - first:
+      4: 400002
+    second: CirclePortal02
+  - first:
+      4: 400004
+    second: Cylinder002
+  - first:
+      4: 400006
+    second: Cylinder004
+  - first:
+      4: 400008
+    second: Cylinder005
+  - first:
+      4: 400010
+    second: Cylinder006
+  - first:
+      4: 400012
+    second: Cylinder007
+  - first:
+      4: 400014
+    second: Cylinder008
+  - first:
+      4: 400016
+    second: Cylinder009
+  - first:
+      4: 400018
+    second: MagicPortalRound01
+  - first:
+      4: 400020
+    second: //RootNode
+  - first:
+      4: 400022
+    second: MagicPortalRound03
+  - first:
+      4: 400024
+    second: MagicPortalRoundSt01
+  - first:
+      4: 400026
+    second: MagicPortalRoundSt02
+  - first:
+      4: 400028
+    second: MagicPortalRoundSt03
+  - first:
+      4: 400030
+    second: PortalCylinderStand003
+  - first:
+      4: 400032
+    second: PortalCylinderStand004
+  - first:
+      4: 400034
+    second: PortalCylinderStand005
+  - first:
+      4: 400036
+    second: PortalCylinderStand01
+  - first:
+      4: 400038
+    second: PortalCylinderStand02
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      23: 2300000
+    second: CirclePortal01
+  - first:
+      23: 2300002
+    second: CirclePortal02
+  - first:
+      23: 2300004
+    second: Cylinder002
+  - first:
+      23: 2300006
+    second: Cylinder004
+  - first:
+      23: 2300008
+    second: Cylinder005
+  - first:
+      23: 2300010
+    second: Cylinder006
+  - first:
+      23: 2300012
+    second: Cylinder007
+  - first:
+      23: 2300014
+    second: Cylinder008
+  - first:
+      23: 2300016
+    second: Cylinder009
+  - first:
+      23: 2300018
+    second: MagicPortalRound01
+  - first:
+      23: 2300020
+    second: MagicPortalRound03
+  - first:
+      23: 2300022
+    second: MagicPortalRoundSt01
+  - first:
+      23: 2300024
+    second: MagicPortalRoundSt02
+  - first:
+      23: 2300026
+    second: MagicPortalRoundSt03
+  - first:
+      23: 2300028
+    second: PortalCylinderStand003
+  - first:
+      23: 2300030
+    second: PortalCylinderStand004
+  - first:
+      23: 2300032
+    second: PortalCylinderStand005
+  - first:
+      23: 2300034
+    second: PortalCylinderStand01
+  - first:
+      23: 2300036
+    second: PortalCylinderStand02
+  - first:
+      23: 2300038
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: CirclePortal01
+  - first:
+      33: 3300002
+    second: CirclePortal02
+  - first:
+      33: 3300004
+    second: Cylinder002
+  - first:
+      33: 3300006
+    second: Cylinder004
+  - first:
+      33: 3300008
+    second: Cylinder005
+  - first:
+      33: 3300010
+    second: Cylinder006
+  - first:
+      33: 3300012
+    second: Cylinder007
+  - first:
+      33: 3300014
+    second: Cylinder008
+  - first:
+      33: 3300016
+    second: Cylinder009
+  - first:
+      33: 3300018
+    second: MagicPortalRound01
+  - first:
+      33: 3300020
+    second: MagicPortalRound03
+  - first:
+      33: 3300022
+    second: MagicPortalRoundSt01
+  - first:
+      33: 3300024
+    second: MagicPortalRoundSt02
+  - first:
+      33: 3300026
+    second: MagicPortalRoundSt03
+  - first:
+      33: 3300028
+    second: PortalCylinderStand003
+  - first:
+      33: 3300030
+    second: PortalCylinderStand004
+  - first:
+      33: 3300032
+    second: PortalCylinderStand005
+  - first:
+      33: 3300034
+    second: PortalCylinderStand01
+  - first:
+      33: 3300036
+    second: PortalCylinderStand02
+  - first:
+      33: 3300038
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: CirclePortal01
+  - first:
+      43: 4300002
+    second: Cylinder002
+  - first:
+      43: 4300004
+    second: CirclePortal02
+  - first:
+      43: 4300006
+    second: Cylinder004
+  - first:
+      43: 4300008
+    second: PortalCylinderStand01
+  - first:
+      43: 4300010
+    second: PortalCylinderStand02
+  - first:
+      43: 4300012
+    second: Cylinder005
+  - first:
+      43: 4300014
+    second: Cylinder006
+  - first:
+      43: 4300016
+    second: Cylinder007
+  - first:
+      43: 4300018
+    second: MagicPortalRound01
+  - first:
+      43: 4300020
+    second: MagicPortalRoundSt01
+  - first:
+      43: 4300022
+    second: MagicPortalRoundSt02
+  - first:
+      43: 4300024
+    second: PortalCylinderStand003
+  - first:
+      43: 4300026
+    second: Cylinder008
+  - first:
+      43: 4300028
+    second: PortalCylinderStand004
+  - first:
+      43: 4300030
+    second: Cylinder009
+  - first:
+      43: 4300032
+    second: PortalCylinderStand005
+  - first:
+      43: 4300034
+    second: MagicPortalRound03
+  - first:
+      43: 4300036
+    second: MagicPortalRoundSt03
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -114,6 +314,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -138,25 +339,34 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -165,10 +375,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -178,13 +388,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 2
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

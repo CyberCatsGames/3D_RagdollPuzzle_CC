@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26854017, g: 0.46486598, b: 0.61360925, a: 1}
+  m_IndirectSpecularColor: {r: 0.2685308, g: 0.46447867, b: 0.61467874, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21048,6 +21048,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: APR_Player_Narkuto
       objectReference: {fileID: 0}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Hits.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Hits.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00dc8bbb66a53434ebf8026a63cead1e, type: 3}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bb0121532e03b547af8d6849080a21d, type: 3}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c4ffc845e0d5ba4596dd4a822b859ac, type: 3}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a978a22949842646afca9d2938cf3d7, type: 3}
+    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
+      propertyPath: Impacts.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00dc8bbb66a53434ebf8026a63cead1e, type: 3}
     - target: {fileID: 825521652614707463, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
       propertyPath: m_RootOrder
       value: 11

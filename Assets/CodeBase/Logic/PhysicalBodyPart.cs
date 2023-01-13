@@ -19,7 +19,8 @@ namespace CodeBase.Logic
 
         private void FixedUpdate()
         {
-            Quaternion targetRotation = Quaternion.Inverse(_target.localRotation) * _startRotation;
+            //Quaternion targetRotation = Quaternion.Inverse(_target.localRotation) * _startRotation;
+            Quaternion targetRotation = _target.localRotation;
 
             if (_isArm == true)
             {

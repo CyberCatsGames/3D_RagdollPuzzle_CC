@@ -154,8 +154,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 45.84
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 50.65
+  m_Center: {x: 0, y: 7.66, z: 0}
 --- !u!1 &85734633755727926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,8 +4317,6 @@ GameObject:
   - component: {fileID: 3074439962761940053}
   - component: {fileID: 419306197}
   - component: {fileID: 419306196}
-  - component: {fileID: 400866131214415911}
-  - component: {fileID: 2082556656246904742}
   m_Layer: 0
   m_Name: Shrek_Cop
   m_TagString: Untagged
@@ -4361,7 +4359,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
   m_AutoRepath: 1
@@ -4410,7 +4408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b89301783f04745bc74a980fa17130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 2082556656246904742}
+  _animator: {fileID: 2015822402}
 --- !u!114 &419306196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4423,43 +4421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4c079402724c2b934b697bb1ab8c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyAttack: {fileID: 400866131214415911}
+  _enemyAttack: {fileID: 500796610}
   _triggerObserver: {fileID: 8970273934906686401}
---- !u!114 &400866131214415911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8879063172056444449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9a6251d402ec748a6a43400ed940d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cooldown: 2
-  _damageRadius: 1
-  _damage: 1
---- !u!95 &2082556656246904742
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8879063172056444449}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 373ab373e1740c74096d190dc31fc4db, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &9064176195207563792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,7 +4878,7 @@ Animator:
   m_GameObject: {fileID: 4425415888120788684}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 76393b70596d2474f96d0dc171a0c995, type: 3}
-  m_Controller: {fileID: 9100000, guid: f7a247398d14d45cca6809783f31b1dd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 373ab373e1740c74096d190dc31fc4db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -4925,3 +4888,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &500796610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425415888120788684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9a6251d402ec748a6a43400ed940d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown: 2
+  _damageRadius: 2
+  _damage: 1
+  _enemyAnimator: {fileID: 419306197}

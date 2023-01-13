@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace CodeBase.Enemies
 {
-    [RequireComponent(typeof(EnemyAnimator))]
     public class EnemyAttack : MonoBehaviour
     {
         [SerializeField] private float _cooldown = 2f;
         [SerializeField] private float _damageRadius = 1f;
         [SerializeField] private int _damage = 1;
+        [SerializeField] private EnemyAnimator _enemyAnimator;
 
         private readonly Collider[] _results = new Collider[1];
         private Transform _heroTransform;
@@ -18,7 +18,6 @@ namespace CodeBase.Enemies
         private bool _isAttacking;
         private int _layerMask;
         private bool _attackIsEnabled;
-        private EnemyAnimator _enemyAnimator;
 
         private bool CanAttack => _attackIsEnabled == true && _isAttacking == false && _cooldownTimer <= 0f;
 
@@ -26,7 +25,6 @@ namespace CodeBase.Enemies
 
         private void Awake()
         {
-            _enemyAnimator = GetComponent<EnemyAnimator>();
             _layerMask = 1 << LayerMask.NameToLayer("Player_1");
         }
 
@@ -48,7 +46,7 @@ namespace CodeBase.Enemies
             _attackIsEnabled = false;
         }
 
-        private void OnAttack()
+        public void OnAttack()
         {
             if (TryHit(out Collider hit))
             {
@@ -56,7 +54,7 @@ namespace CodeBase.Enemies
             }
         }
 
-        private void OnAttackEnded()
+        public void OnAttackEnded()
         {
             _cooldownTimer = _cooldown;
             _isAttacking = false;

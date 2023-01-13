@@ -26,37 +26,4 @@ namespace CodeBase.HeroComponents
             Changed?.Invoke();
         }
     }
-
-    [RequireComponent(typeof(HeroHealth))]
-    public class HeroDeath : MonoBehaviour
-    {
-        private HeroHealth _health;
-
-        private void Awake()
-        {
-            _health = GetComponent<HeroHealth>();
-        }
-
-        private void OnEnable()
-        {
-            _health.Changed += OnHealthChanged;
-        }
-
-        private void OnDisable()
-        {
-            _health.Changed -= OnHealthChanged;
-        }
-
-        private void OnHealthChanged()
-        {
-            if (_health.Current > 0)
-                return;
-
-            Die();
-        }
-
-        private void Die()
-        {
-        }
-    }
 }

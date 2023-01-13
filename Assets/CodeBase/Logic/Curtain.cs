@@ -9,6 +9,11 @@ namespace CodeBase.Logic
         [SerializeField] private CanvasGroup _canvasGroup;
         [SerializeField] private float _duration = 1f;
 
+        private void Awake()
+        {
+            FadeIn();
+        }
+
         public void FadeIn(Action callback = null)
         {
             _canvasGroup.gameObject.SetActive(true);

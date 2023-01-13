@@ -1,5 +1,4 @@
-﻿using System;
-using ARP.APR.Scripts;
+﻿using ARP.APR.Scripts;
 using DG.Tweening;
 using UnityEngine;
 

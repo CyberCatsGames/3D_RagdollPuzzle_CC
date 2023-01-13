@@ -49,7 +49,7 @@ namespace CodeBase.HeroComponents
                 componentsInChild.angularXDrive = angularXDrive;
             }
 
-            LosePanel.Instance.Show();
+            CY_GtaEffect.Instance.gameObject.SetActive(true);
         }
     }
 }

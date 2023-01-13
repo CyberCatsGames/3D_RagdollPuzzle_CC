@@ -1,5 +1,4 @@
-﻿using System;
-using CodeBase.Logic;
+﻿using CodeBase.Logic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;

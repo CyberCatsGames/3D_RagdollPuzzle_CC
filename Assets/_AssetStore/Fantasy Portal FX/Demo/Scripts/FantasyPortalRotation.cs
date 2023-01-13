@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
- 
+
 namespace PortalFX
 {
     public class FantasyPortalRotation : MonoBehaviour

@@ -9,16 +9,38 @@ namespace CodeBase.Enemies
     {
         [SerializeField] private NavMeshAgent _agent;
 
-        private Hero _hero;
+        private HeroHealth[] _heroes;
+
+        private HeroHealth NearHero
+        {
+            get
+            {
+                HeroHealth nearHero = _heroes[0];
+                float littleDistance = float.MaxValue;
+
+                foreach (HeroHealth hero in _heroes)
+                {
+                    float distance = Vector3.Distance(transform.position, hero.transform.position);
+
+                    if (distance < littleDistance)
+                    {
+                        nearHero = hero;
+                        littleDistance = distance;
+                    }
+                }
+
+                return nearHero;
+            }
+        }
 
         private void Start()
         {
-            _hero = FindObjectOfType<Hero>();
+            _heroes = FindObjectsOfType<HeroHealth>();
         }
 
         private void Update()
         {
-            _agent.destination = _hero.transform.position;
+            _agent.destination = NearHero.transform.position;
         }
     }
 }

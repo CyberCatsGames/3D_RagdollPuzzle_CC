@@ -1,11 +1,14 @@
 ﻿using ARP.APR.Scripts;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace CodeBase.HeroComponents
 {
     [RequireComponent(typeof(HeroHealth))]
     public class HeroDeath : MonoBehaviour
     {
+        [SerializeField] private UnityEvent _onDeath;
+
         private HeroHealth _health;
         private LosePanel _losePanel;
         private bool _isDied;
@@ -35,6 +38,7 @@ namespace CodeBase.HeroComponents
 
         private void Die()
         {
+            _onDeath?.Invoke();
             _isDied = true;
             APRController aprController = transform.root.GetComponent<APRController>();
             aprController.autoGetUpWhenPossible = false;

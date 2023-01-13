@@ -18,6 +18,7 @@ namespace CodeBase.HeroComponents
         private CanvasGroup _canvasGroup;
         private SceneLoader _sceneLoader;
 
+
         private void Awake()
         {
             _sceneLoader = FindObjectOfType<SceneLoader>();

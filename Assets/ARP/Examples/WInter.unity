@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26852533, g: 0.46447325, b: 0.6146784, a: 1}
+  m_IndirectSpecularColor: {r: 0.2685308, g: 0.46447867, b: 0.61467874, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10109,6 +10109,21 @@ MonoBehaviour:
   CM_Cart: {fileID: 1943717525}
   StartDelay: 2
   ShowPreview: 1
+  CMFinishEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1410748781}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &406049801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23810,7 +23825,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956096220}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
@@ -31020,6 +31035,26 @@ PrefabInstance:
       propertyPath: _ppVolume
       value: 
       objectReference: {fileID: 956096221}
+    - target: {fileID: 4108564631887084571, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896023836951789724, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896023836951789724, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896023837491684343, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896023837491684343, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5152657001573139141, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -31107,6 +31142,38 @@ PrefabInstance:
     - target: {fileID: 5152657001573139145, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: m_Name
       value: Canvas_Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152657002470285257, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: BGMusic
+      value: 
+      objectReference: {fileID: 181890368}
+    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: GtaSound
+      value: 
+      objectReference: {fileID: 1582589124}
+    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: _ppVolume
+      value: 
+      objectReference: {fileID: 956096221}
+    - target: {fileID: 7784360171010139794, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0bcaf8b1a6e6ef4eae31070b4c25a43, type: 3}
+    - target: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
@@ -36429,6 +36496,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fb37be50a55b40846808c13a76b43875, type: 3}
   m_PrefabInstance: {fileID: 1409898951}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1410748781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5152657002470285257, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+  m_PrefabInstance: {fileID: 1215813200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1413146557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41300,6 +41372,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010109306190, guid: cf4be08cd080bac4ba252ea0da781911, type: 3}
   m_PrefabInstance: {fileID: 1580777144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1582589124 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+  m_PrefabInstance: {fileID: 1215813200}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1583313602
 PrefabInstance:

@@ -4,16 +4,19 @@ namespace Animations
 {
     public class EnemyAnimator : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField] private Animator _animator;
+
+        private static readonly int AttackAnimation = Animator.StringToHash("Attack");
+        private static readonly int MoveAnimation = Animator.StringToHash("Move");
+
+        public void Attack()
         {
-        
+            _animator.SetTrigger(AttackAnimation);
         }
 
-        // Update is called once per frame
-        void Update()
+        public void Move(float speed)
         {
-        
+            _animator.SetFloat(MoveAnimation, speed);
         }
     }
 }

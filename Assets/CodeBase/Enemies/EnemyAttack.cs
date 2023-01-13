@@ -1,9 +1,11 @@
 using System.Linq;
+using Animations;
 using CodeBase.HeroComponents;
 using UnityEngine;
 
 namespace CodeBase.Enemies
 {
+    [RequireComponent(typeof(EnemyAnimator))]
     public class EnemyAttack : MonoBehaviour
     {
         [SerializeField] private float _cooldown = 2f;
@@ -16,6 +18,7 @@ namespace CodeBase.Enemies
         private bool _isAttacking;
         private int _layerMask;
         private bool _attackIsEnabled;
+        private EnemyAnimator _enemyAnimator;
 
         private bool CanAttack => _attackIsEnabled == true && _isAttacking == false && _cooldownTimer <= 0f;
 
@@ -23,6 +26,7 @@ namespace CodeBase.Enemies
 
         private void Awake()
         {
+            _enemyAnimator = GetComponent<EnemyAnimator>();
             _layerMask = 1 << LayerMask.NameToLayer("Player_1");
         }
 
@@ -44,12 +48,6 @@ namespace CodeBase.Enemies
             _attackIsEnabled = false;
         }
 
-        private void StartAttack()
-        {
-            _isAttacking = true;
-            transform.LookAt(_heroTransform);
-        }
-
         private void OnAttack()
         {
             if (TryHit(out Collider hit))
@@ -58,17 +56,24 @@ namespace CodeBase.Enemies
             }
         }
 
+        private void OnAttackEnded()
+        {
+            _cooldownTimer = _cooldown;
+            _isAttacking = false;
+        }
+
+        private void StartAttack()
+        {
+            _isAttacking = true;
+            _enemyAnimator.Attack();
+            transform.LookAt(_heroTransform);
+        }
+
         private bool TryHit(out Collider hit)
         {
             int hitCount = Physics.OverlapSphereNonAlloc(StartPoint, _damageRadius, _results, _layerMask);
             hit = _results.FirstOrDefault();
             return hitCount > 0;
-        }
-
-        private void OnAttackEnded()
-        {
-            _cooldownTimer = _cooldown;
-            _isAttacking = false;
         }
     }
 }

@@ -233,6 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825521652614707463}
   - component: {fileID: 825521652614707373}
+  - component: {fileID: 861741192}
   m_Layer: 10
   m_Name: APR_Player_Narkuto
   m_TagString: Player
@@ -316,17 +317,19 @@ MonoBehaviour:
   punchForce: 15
   ImpactForce: 10
   Impacts:
-  - {fileID: 8300000, guid: 6c4cb0d9b484065469606431acecaf73, type: 3}
-  - {fileID: 8300000, guid: 4cfd3bf123be1e74d84fd84739aef04e, type: 3}
-  - {fileID: 8300000, guid: 1806ad42b4b8bdc40898d43082c298f8, type: 3}
-  - {fileID: 8300000, guid: f4e7492d749d64f4d811484f249eedf4, type: 3}
-  - {fileID: 8300000, guid: ddaf4c9c5d14d6748a25ad4308b4359b, type: 3}
-  - {fileID: 8300000, guid: c85f650825385474cad7dc7e450029de, type: 3}
-  Hits:
   - {fileID: 8300000, guid: 5bb0121532e03b547af8d6849080a21d, type: 3}
-  - {fileID: 8300000, guid: 76928696bc285224ab17f9478ae45bb9, type: 3}
   - {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
   - {fileID: 8300000, guid: 2c4ffc845e0d5ba4596dd4a822b859ac, type: 3}
+  - {fileID: 8300000, guid: 5f6efef26c685664681b9674252bfa2c, type: 3}
+  - {fileID: 8300000, guid: fa4262d63b5cd9e43a38da3112080420, type: 3}
+  - {fileID: 8300000, guid: 3e4cc2b2d993ad64e885ee5be7c5b690, type: 3}
+  - {fileID: 8300000, guid: 8e1b5144ca9dbc9478dcb75f9b7037b5, type: 3}
+  - {fileID: 8300000, guid: 9ef974fb49c964b48a2bc7a65109bd25, type: 3}
+  Hits:
+  - {fileID: 8300000, guid: d6b1f46a161f49b4aa9e245a0d0d44d0, type: 3}
+  - {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
+  - {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
+  - {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}
   SoundSource: {fileID: 3282945853518532484}
   jumping: 0
   isJumping: 0
@@ -334,6 +337,19 @@ MonoBehaviour:
   punchingRight: 0
   punchingLeft: 0
   editorDebugMode: 1
+--- !u!114 &861741192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825521652614707344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a467a560bc84809a449fc3e984b23b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 30
 --- !u!1 &825521652614707346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,6 +1973,7 @@ GameObject:
   - component: {fileID: 825521652614707578}
   - component: {fileID: 825521652614707529}
   - component: {fileID: 825521652614707579}
+  - component: {fileID: 1685460597}
   m_Layer: 10
   m_Name: APR_Root
   m_TagString: CanBeGrabbed
@@ -2105,6 +2122,18 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1685460597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825521652614707362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281090122b48bb644bdd7c0c74931eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &825521652614707363
 GameObject:
   m_ObjectHideFlags: 0

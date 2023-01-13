@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace CodeBase.HeroComponents
 {
@@ -58,37 +57,6 @@ namespace CodeBase.HeroComponents
 
         private void Die()
         {
-        }
-    }
-
-    public class HealthBar : MonoBehaviour
-    {
-        [SerializeField] private Image _bar;
-
-        public void SetValue(int current, int max)
-        {
-            _bar.fillAmount = (float)current / max;
-        }
-    }
-
-    public class ActorUI : MonoBehaviour
-    {
-        [SerializeField] private HealthBar _healthBar;
-        [SerializeField] private HeroHealth _heroHealth;
-
-        private void OnEnable()
-        {
-            _heroHealth.Changed += OnHealthChanged;
-        }
-
-        private void OnDisable()
-        {
-            _heroHealth.Changed += OnHealthChanged;
-        }
-
-        private void OnHealthChanged()
-        {
-            _healthBar.SetValue(_heroHealth.Current, _heroHealth.Max);
         }
     }
 }

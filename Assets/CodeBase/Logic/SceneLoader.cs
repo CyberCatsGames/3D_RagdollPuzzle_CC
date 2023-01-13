@@ -6,7 +6,14 @@ namespace CodeBase.Logic
 {
     public class SceneLoader : MonoBehaviour
     {
-        [SerializeField] private Curtain _curtain;
+        private Curtain _curtain;
+
+        public SceneLoader Instance => this;
+
+        private void Awake()
+        {
+            _curtain = FindObjectOfType<Curtain>();
+        }
 
         public void Load(string sceneName) =>
             StartCoroutine(LoadScene(sceneName));

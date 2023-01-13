@@ -1232,13 +1232,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5037099809038035023}
+  - component: {fileID: 1215813206}
+  - component: {fileID: 1215813205}
   m_Layer: 5
   m_Name: Win_PopUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5037099809038035023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1260,6 +1262,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1215813206
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108564631887084571}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1215813205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108564631887084571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70922bd786f487097234e26d1ea2570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _first: {fileID: 7326278446924862597}
+  _second: {fileID: 5100781530528714545}
+  _duration: 1
 --- !u!1 &4272727209776791607
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,6 +6159,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284068474995100239}
+  - component: {fileID: 1215813203}
+  - component: {fileID: 1215813202}
   m_Layer: 5
   m_Name: Lose_PopUp
   m_TagString: Untagged
@@ -6158,6 +6189,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1215813203
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4297942865632403123}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1215813202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4297942865632403123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cced93fd354ba1b97e93a481c257dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _first: {fileID: 5691988615049705248}
+  _second: {fileID: 93621693290310171}
+  _duration: 1
 --- !u!1 &4487467854603955971
 GameObject:
   m_ObjectHideFlags: 0

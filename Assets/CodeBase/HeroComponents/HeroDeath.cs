@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ARP.APR.Scripts;
+using UnityEngine;
 
 namespace CodeBase.HeroComponents
 {
@@ -7,11 +8,11 @@ namespace CodeBase.HeroComponents
     {
         private HeroHealth _health;
         private LosePanel _losePanel;
+        private bool _isDied;
 
         private void Awake()
         {
             _health = GetComponent<HeroHealth>();
-            _losePanel = FindObjectOfType<LosePanel>();
         }
 
         private void OnEnable()
@@ -26,7 +27,7 @@ namespace CodeBase.HeroComponents
 
         private void OnHealthChanged()
         {
-            if (_health.Current > 0)
+            if (_isDied || _health.Current > 0)
                 return;
 
             Die();
@@ -34,7 +35,21 @@ namespace CodeBase.HeroComponents
 
         private void Die()
         {
-            _losePanel.Show();
+            _isDied = true;
+            APRController aprController = transform.root.GetComponent<APRController>();
+            aprController.autoGetUpWhenPossible = false;
+            aprController.canBeKnockoutByImpact = false;
+            aprController.useStepPrediction = false;
+            aprController.useControls = false;
+
+            foreach (ConfigurableJoint componentsInChild in aprController.GetComponentsInChildren<ConfigurableJoint>())
+            {
+                JointDrive angularXDrive = componentsInChild.angularXDrive;
+                angularXDrive.positionSpring = 0f;
+                componentsInChild.angularXDrive = angularXDrive;
+            }
+
+            LosePanel.Instance.Show();
         }
     }
 }

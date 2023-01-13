@@ -1275,7 +1275,9 @@ GameObject:
   - component: {fileID: 5546371106793781268}
   - component: {fileID: 5546371106793781287}
   - component: {fileID: 5546371106793781269}
-  m_Layer: 0
+  - component: {fileID: 1598061996}
+  - component: {fileID: 1598061997}
+  m_Layer: 10
   m_Name: APR_Root
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1423,6 +1425,33 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1598061996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5546371106793781708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a467a560bc84809a449fc3e984b23b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 30
+--- !u!136 &1598061997
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5546371106793781708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.14
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.21, z: 0}
 --- !u!1 &5546371106793781709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,9 +3242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5546371106793781353}
   - component: {fileID: 5546371106793781699}
-  - component: {fileID: 1583313604}
-  - component: {fileID: 4260436053770853979}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_Player_Sanya 1
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 0}
@@ -3316,33 +3343,6 @@ MonoBehaviour:
   punchingRight: 0
   punchingLeft: 0
   editorDebugMode: 1
---- !u!114 &1583313604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546371106793781758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a467a560bc84809a449fc3e984b23b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _value: 30
---- !u!136 &4260436053770853979
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546371106793781758}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.14
-  m_Height: 5
-  m_Direction: 1
-  m_Center: {x: 0, y: 2.21, z: 0}
 --- !u!1 &5864266709248656290
 GameObject:
   m_ObjectHideFlags: 0

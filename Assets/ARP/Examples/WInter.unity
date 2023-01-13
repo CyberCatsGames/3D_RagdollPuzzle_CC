@@ -6002,6 +6002,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010109306190, guid: cf4be08cd080bac4ba252ea0da781911, type: 3}
   m_PrefabInstance: {fileID: 249349593}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &250062863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4297942865632403123, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+  m_PrefabInstance: {fileID: 1215813200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &260910339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31155,6 +31160,14 @@ PrefabInstance:
       propertyPath: GtaSound
       value: 
       objectReference: {fileID: 1582589124}
+    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: LosePopUp
+      value: 
+      objectReference: {fileID: 250062863}
+    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: _duration
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: _ppVolume
       value: 

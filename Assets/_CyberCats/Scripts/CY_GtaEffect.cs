@@ -8,6 +8,8 @@ public class CY_GtaEffect : MonoBehaviour {
     [SerializeField] private float _timeSpeed;
     [SerializeField] private AudioSource GtaSound;
     [SerializeField] private AudioSource BGMusic;
+    [SerializeField] private GameObject LosePopUp;
+    [SerializeField] private float _duration;
 
 
 
@@ -26,12 +28,20 @@ public class CY_GtaEffect : MonoBehaviour {
 
             Time.timeScale = _timeSpeed;
             _ppVolume.enabled = true;
+
+            StartCoroutine(ShowLosePopUp());
         } else {
             BGMusic.UnPause();
             Time.timeScale = 1;
             _ppVolume.enabled = false;
         }
        
+    }
+
+    private IEnumerator ShowLosePopUp() {
+        yield return new WaitForSecondsRealtime(_duration);
+        LosePopUp.SetActive(true);
+        gameObject.SetActive(false);
     }
 
    

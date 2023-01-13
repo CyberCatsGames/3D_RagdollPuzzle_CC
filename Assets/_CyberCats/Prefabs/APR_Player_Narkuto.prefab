@@ -233,9 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825521652614707463}
   - component: {fileID: 825521652614707373}
-  - component: {fileID: 861741192}
-  - component: {fileID: 3263446255817583487}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_Player_Narkuto
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -338,33 +336,6 @@ MonoBehaviour:
   punchingRight: 0
   punchingLeft: 0
   editorDebugMode: 1
---- !u!114 &861741192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825521652614707344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a467a560bc84809a449fc3e984b23b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _value: 30
---- !u!136 &3263446255817583487
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825521652614707344}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.14
-  m_Height: 5
-  m_Direction: 1
-  m_Center: {x: 0, y: 2.21, z: 0}
 --- !u!1 &825521652614707346
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +349,7 @@ GameObject:
   - component: {fileID: 825521652614707359}
   - component: {fileID: 825521652614707380}
   - component: {fileID: 825521652614707375}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_RightHand
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -554,7 +525,7 @@ GameObject:
   - component: {fileID: 825521652614707356}
   - component: {fileID: 825521652614707374}
   - component: {fileID: 825521652614707372}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_LeftHand
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -729,7 +700,7 @@ GameObject:
   - component: {fileID: 825521652614707522}
   - component: {fileID: 825521652614707389}
   - component: {fileID: 825521652614707520}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_LowerLeftLeg
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -890,7 +861,7 @@ GameObject:
   - component: {fileID: 825521652614707525}
   - component: {fileID: 825521652614707387}
   - component: {fileID: 825521652614707457}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_RightFoot
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1063,7 +1034,7 @@ GameObject:
   - component: {fileID: 825521652614707542}
   - component: {fileID: 825521652614707386}
   - component: {fileID: 825521652614707540}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_LowerRightLeg
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1223,7 +1194,7 @@ GameObject:
   - component: {fileID: 825521652614707528}
   - component: {fileID: 825521652614707523}
   - component: {fileID: 825521652614707534}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_UpperLeftLeg
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1384,7 +1355,7 @@ GameObject:
   - component: {fileID: 825521652614707388}
   - component: {fileID: 825521652614707378}
   - component: {fileID: 825521652614707462}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_LeftFoot
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1559,7 +1530,7 @@ GameObject:
   - component: {fileID: 825521652614707574}
   - component: {fileID: 3282945853518532484}
   - component: {fileID: 8970066472926025640}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_Head
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1828,7 +1799,7 @@ GameObject:
   - component: {fileID: 825521652614707562}
   - component: {fileID: 825521652614707564}
   - component: {fileID: 825521652614707563}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_UpperRightArm
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -1989,6 +1960,8 @@ GameObject:
   - component: {fileID: 825521652614707529}
   - component: {fileID: 825521652614707579}
   - component: {fileID: 1685460597}
+  - component: {fileID: 1685460601}
+  - component: {fileID: 1685460602}
   m_Layer: 10
   m_Name: APR_Root
   m_TagString: CanBeGrabbed
@@ -2053,7 +2026,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.8385, z: 0.008}
+  m_ConnectedAnchor: {x: 0, y: 1.8385001, z: 0.00799942}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -2149,6 +2122,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281090122b48bb644bdd7c0c74931eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1685460601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825521652614707362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a467a560bc84809a449fc3e984b23b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 30
+--- !u!136 &1685460602
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825521652614707362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 13.46
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.24, z: 0}
 --- !u!1 &825521652614707363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,7 +2161,7 @@ GameObject:
   - component: {fileID: 825521652614707583}
   - component: {fileID: 825521652614707558}
   - component: {fileID: 825521652614707580}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_Body
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -2321,7 +2321,7 @@ GameObject:
   - component: {fileID: 825521652614707547}
   - component: {fileID: 825521652614707369}
   - component: {fileID: 825521652614707545}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_LowerLeftArm
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -2481,7 +2481,7 @@ GameObject:
   - component: {fileID: 825521652614707549}
   - component: {fileID: 825521652614707543}
   - component: {fileID: 825521652614707538}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_UpperRightLeg
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -2641,7 +2641,7 @@ GameObject:
   - component: {fileID: 825521652614707567}
   - component: {fileID: 825521652614707383}
   - component: {fileID: 825521652614707565}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_LowerRightArm
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -2801,7 +2801,7 @@ GameObject:
   - component: {fileID: 825521652614707553}
   - component: {fileID: 825521652614707544}
   - component: {fileID: 825521652614707559}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: APR_UpperLeftArm
   m_TagString: CanBeGrabbed
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}

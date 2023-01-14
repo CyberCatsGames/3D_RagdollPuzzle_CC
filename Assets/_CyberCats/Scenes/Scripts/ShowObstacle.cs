@@ -6,7 +6,7 @@ namespace _CyberCats.Scenes.Scripts
     public class ShowObstacle : MonoBehaviour
     {
         [SerializeField] private float _duration = 4f;
-        [SerializeField] private float _delay = 6f;
+        [SerializeField] private float _delay = 7.5f;
 
         private Vector3 _finishScale;
 

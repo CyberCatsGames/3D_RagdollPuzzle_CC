@@ -297,18 +297,18 @@ MonoBehaviour:
   punchRight: e
   thisPlayerLayer: Player_1
   forwardIsCameraDirection: 1
-  moveSpeed: 10
-  turnSpeed: 6
-  jumpForce: 18
+  moveSpeed: 15
+  turnSpeed: 4
+  jumpForce: 15
   autoGetUpWhenPossible: 1
   useStepPrediction: 1
   balanceHeight: 2.5
-  balanceStrength: 5000
-  coreStrength: 2000
-  limbStrength: 500
+  balanceStrength: 8000
+  coreStrength: 4000
+  limbStrength: 2000
   StepDuration: 0.2
   StepHeight: 1.7
-  FeetMountForce: 25
+  FeetMountForce: 50
   reachSensitivity: 25
   armReachStiffness: 2000
   canBeKnockoutByImpact: 1
@@ -325,8 +325,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3e4cc2b2d993ad64e885ee5be7c5b690, type: 3}
   - {fileID: 8300000, guid: 8e1b5144ca9dbc9478dcb75f9b7037b5, type: 3}
   - {fileID: 8300000, guid: 9ef974fb49c964b48a2bc7a65109bd25, type: 3}
+  - {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
+  - {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
+  - {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}
   Hits:
   - {fileID: 8300000, guid: d6b1f46a161f49b4aa9e245a0d0d44d0, type: 3}
+  - {fileID: 8300000, guid: 5bb0121532e03b547af8d6849080a21d, type: 3}
+  - {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
+  - {fileID: 8300000, guid: 2c4ffc845e0d5ba4596dd4a822b859ac, type: 3}
+  - {fileID: 8300000, guid: 5f6efef26c685664681b9674252bfa2c, type: 3}
+  - {fileID: 8300000, guid: fa4262d63b5cd9e43a38da3112080420, type: 3}
+  - {fileID: 8300000, guid: 3e4cc2b2d993ad64e885ee5be7c5b690, type: 3}
+  - {fileID: 8300000, guid: 8e1b5144ca9dbc9478dcb75f9b7037b5, type: 3}
+  - {fileID: 8300000, guid: 9ef974fb49c964b48a2bc7a65109bd25, type: 3}
   - {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
   - {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
   - {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}

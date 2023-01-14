@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26854017, g: 0.46486598, b: 0.61360925, a: 1}
+  m_IndirectSpecularColor: {r: 0.2685308, g: 0.46447867, b: 0.61467874, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9627,7 +9627,7 @@ MonoBehaviour:
   rotateCamera: 1
   rotateSpeed: 4
   minAngle: -45
-  maxAngle: 10
+  maxAngle: 0
 --- !u!114 &398797558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9691,7 +9691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CM_Cart: {fileID: 1943717525}
   StartDelay: 2
-  ShowPreview: 1
+  ShowPreview: 0
   CMFinishEvent:
     m_PersistentCalls:
       m_Calls:
@@ -20129,70 +20129,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: APR_Player_Narkuto
       objectReference: {fileID: 0}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5bb0121532e03b547af8d6849080a21d, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 2c4ffc845e0d5ba4596dd4a822b859ac, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f6efef26c685664681b9674252bfa2c, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: fa4262d63b5cd9e43a38da3112080420, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e4cc2b2d993ad64e885ee5be7c5b690, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e1b5144ca9dbc9478dcb75f9b7037b5, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ef974fb49c964b48a2bc7a65109bd25, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Impacts.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[10]
-      value: 
-      objectReference: {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Hits.Array.data[11]
-      value: 
-      objectReference: {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Impacts.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Impacts.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
-    - target: {fileID: 825521652614707373, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
-      propertyPath: Impacts.Array.data[10]
-      value: 
-      objectReference: {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}
     - target: {fileID: 825521652614707463, guid: cf8a385b3f4bbd64fa1e1bc2109af145, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -40050,102 +39986,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.size
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5bb0121532e03b547af8d6849080a21d, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: 2c4ffc845e0d5ba4596dd4a822b859ac, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f6efef26c685664681b9674252bfa2c, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: fa4262d63b5cd9e43a38da3112080420, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e4cc2b2d993ad64e885ee5be7c5b690, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e1b5144ca9dbc9478dcb75f9b7037b5, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ef974fb49c964b48a2bc7a65109bd25, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.size
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[10]
-      value: 
-      objectReference: {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[11]
-      value: 
-      objectReference: {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Hits.Array.data[12]
-      value: 
-      objectReference: {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5bb0121532e03b547af8d6849080a21d, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6633b4894b2ae9342a7d62246710b4d4, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: 2c4ffc845e0d5ba4596dd4a822b859ac, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f6efef26c685664681b9674252bfa2c, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: fa4262d63b5cd9e43a38da3112080420, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e4cc2b2d993ad64e885ee5be7c5b690, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e1b5144ca9dbc9478dcb75f9b7037b5, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ef974fb49c964b48a2bc7a65109bd25, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[10]
-      value: 
-      objectReference: {fileID: 8300000, guid: e30ec950a59f6974ca1ef9cf92cbc415, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[11]
-      value: 
-      objectReference: {fileID: 8300000, guid: 50b6af9b9ea6e7245bed990db918877a, type: 3}
-    - target: {fileID: 5546371106793781699, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
-      propertyPath: Impacts.Array.data[12]
-      value: 
-      objectReference: {fileID: 8300000, guid: 72ee14667ed909c40923a4246e06655d, type: 3}
     - target: {fileID: 5546371106793781758, guid: e696ab2c67369e548b3616bb63a34648, type: 3}
       propertyPath: m_Name
       value: APR_Player_Sanya 1

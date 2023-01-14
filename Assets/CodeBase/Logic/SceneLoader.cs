@@ -8,10 +8,13 @@ namespace CodeBase.Logic
     {
         private Curtain _curtain;
 
-        public SceneLoader Instance => this;
+        public static SceneLoader Instance;
 
         private void Awake()
         {
+            if(Instance == null) {
+                Instance = this;
+            }
             _curtain = FindObjectOfType<Curtain>();
         }
 
@@ -24,7 +27,6 @@ namespace CodeBase.Logic
             while (waitToLoad.isDone != true) {
                 yield return null;
             }
-
              _curtain.FadeIn();
         }
     }

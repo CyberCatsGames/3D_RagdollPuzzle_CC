@@ -29773,6 +29773,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3695382800034248968, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297942865632403123, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4896023836071654176, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: _heroHealth
       value: 
@@ -29877,6 +29885,14 @@ PrefabInstance:
       propertyPath: _ppVolume
       value: 
       objectReference: {fileID: 956096221}
+    - target: {fileID: 9124828767653075054, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.637
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124828767653075054, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
 --- !u!1001 &1227413615

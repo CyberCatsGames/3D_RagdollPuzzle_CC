@@ -16,18 +16,16 @@ namespace CodeBase.Logic
         }
 
         public void Load(string sceneName) =>
-            StartCoroutine(LoadScene(sceneName));
+        StartCoroutine(LoadScene(sceneName));
 
-        private IEnumerator LoadScene(string sceneName)
-        {
+        private IEnumerator LoadScene(string sceneName) {
             AsyncOperation waitToLoad = SceneManager.LoadSceneAsync(sceneName);
 
-            while (waitToLoad.isDone != true)
-            {
+            while (waitToLoad.isDone != true) {
                 yield return null;
             }
 
-            _curtain.FadeIn();
+             _curtain.FadeIn();
         }
     }
 }

@@ -28,13 +28,10 @@ namespace _CyberCats.Scenes.Scripts
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
-            _currentScale = transform.localScale;
             _audioSource = GetComponent<AudioSource>();
 
             if (_isFirst == false)
             {
-                _currentScale = Vector3.one * 0.44315f;
-                transform.localScale = Vector3.zero;
                 _canTouch = true;
             }
         }
@@ -49,14 +46,22 @@ namespace _CyberCats.Scenes.Scripts
 
         private void DoScaleAnimation()
         {
-            transform.DOScale(_currentScale, 1f).OnComplete(() => _canTouch = true);
-            _isFirst = false;
+            print("DOScaleAnimation");
+            transform.DOScale(Vector3.one * 0.44315f, 1f).OnComplete
+            (
+                () =>
+                {
+                    _currentScale = transform.localScale;
+                    _isFirst = false;
+                    _canTouch = true;
+                }
+            );
         }
 
         private void OnMouseEnter()
         {
             _rigidbody.isKinematic = false;
-            _rigidbody.AddForceAtPosition(250f * Vector3.one, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            _rigidbody.AddForceAtPosition(1000f * Vector3.one, Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
 
         private void OnMouseDown()
@@ -75,6 +80,9 @@ namespace _CyberCats.Scenes.Scripts
 
         private void Update()
         {
+            if (_isFirst == true)
+                return;
+
             transform.localScale = _currentScale;
         }
     }

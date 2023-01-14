@@ -6,19 +6,24 @@ namespace _CyberCats.Scenes.Scripts
     public class ShowObstacle : MonoBehaviour
     {
         [SerializeField] private float _duration = 4f;
-        
+        [SerializeField] private float _delay = 6f;
+
         private Vector3 _finishScale;
 
         private void Awake()
         {
             _finishScale = transform.localScale;
-            transform.localScale /= 2;
+            transform.localScale = Vector3.zero;
         }
 
         private void Start()
         {
-            transform.DOScale(_finishScale, _duration)
-                .SetLoops(-1, LoopType.Yoyo);
+            Invoke(nameof(DoScaleAnimation), _delay);
+        }
+
+        private void DoScaleAnimation()
+        {
+            transform.DOScale(_finishScale, _duration);
         }
     }
 }

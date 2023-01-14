@@ -5758,11 +5758,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010109306190, guid: cf4be08cd080bac4ba252ea0da781911, type: 3}
   m_PrefabInstance: {fileID: 249349593}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &250062863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4297942865632403123, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-  m_PrefabInstance: {fileID: 1215813200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &260910339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21422,9 +21417,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1815843045}
     m_Modifications:
+    - target: {fileID: 661961498113235125, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 2506145598336567076, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_Name
       value: BreakawayDoor_set_prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506145598336567076, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179570375723499103, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532032766869349903, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_RootOrder
@@ -29762,18 +29773,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 621588739, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: BGMusic
-      value: 
-      objectReference: {fileID: 181890368}
-    - target: {fileID: 621588739, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: _ppVolume
-      value: 
-      objectReference: {fileID: 956096221}
-    - target: {fileID: 4108564631887084571, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4896023836071654176, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: _heroHealth
       value: 
@@ -29782,22 +29781,6 @@ PrefabInstance:
       propertyPath: _heroHealth
       value: 
       objectReference: {fileID: 798918167}
-    - target: {fileID: 4896023836951789724, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896023836951789724, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896023837491684343, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896023837491684343, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5152657001573139141, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -29886,46 +29869,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Game
       objectReference: {fileID: 0}
-    - target: {fileID: 5152657002470285257, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: BGMusic
       value: 
       objectReference: {fileID: 181890368}
     - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: GtaSound
-      value: 
-      objectReference: {fileID: 1582589124}
-    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: LosePopUp
-      value: 
-      objectReference: {fileID: 250062863}
-    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: _duration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091323625737042807, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
       propertyPath: _ppVolume
       value: 
       objectReference: {fileID: 956096221}
-    - target: {fileID: 7784360171010139794, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_Volume
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: b0bcaf8b1a6e6ef4eae31070b4c25a43, type: 3}
-    - target: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
 --- !u!1001 &1227413615
@@ -39929,11 +39880,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010109306190, guid: cf4be08cd080bac4ba252ea0da781911, type: 3}
   m_PrefabInstance: {fileID: 1580777144}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1582589124 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8664661193420273785, guid: 8fc29fce213015347a8b4234ae4e35b5, type: 3}
-  m_PrefabInstance: {fileID: 1215813200}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1583313602
 PrefabInstance:

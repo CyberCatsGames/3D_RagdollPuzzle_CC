@@ -2,6 +2,7 @@ using System.Linq;
 using Animations;
 using CodeBase.HeroComponents;
 using UnityEngine;
+using Random = Unity.Mathematics.Random;
 
 namespace CodeBase.Enemies
 {
@@ -63,7 +64,26 @@ namespace CodeBase.Enemies
         private void StartAttack()
         {
             _isAttacking = true;
-            _enemyAnimator.Attack();
+
+            switch (UnityEngine.Random.Range(0, 5))
+            {
+                case 0:
+                    _enemyAnimator.Attack1();
+                    break;
+                case 1:
+                    _enemyAnimator.Attack2();
+                    break;
+                case 2:
+                    _enemyAnimator.Attack3();
+                    break;
+                case 3:
+                    _enemyAnimator.Attack4();
+                    break;
+                case 4:
+                    _enemyAnimator.Attack5();
+                    break;
+            }
+
             transform.LookAt(_heroTransform);
         }
 

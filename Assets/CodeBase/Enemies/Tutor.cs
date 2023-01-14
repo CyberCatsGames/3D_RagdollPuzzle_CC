@@ -6,7 +6,9 @@ namespace CodeBase.Enemies
 {
     public class Tutor : MonoBehaviour
     {
-        [SerializeField] private float _duration = 1f;
+        [SerializeField] private float _fadeDuration = 1f;
+        [SerializeField] private float _lifeTime = 1f;
+        [SerializeField] private float _startDelay = 1f;
         [SerializeField] private CanvasGroup _canvasGroup;
 
         private APRController _input;
@@ -18,8 +20,8 @@ namespace CodeBase.Enemies
 
         private void Start()
         {
-            Invoke(nameof(Show), 1f);
-            Invoke(nameof(Close), 8f);
+            Invoke(nameof(Show), _startDelay);
+            Invoke(nameof(Close), _lifeTime);
         }
 
         private void Show()
@@ -27,12 +29,12 @@ namespace CodeBase.Enemies
             _input.useControls = false;
             _canvasGroup.gameObject.SetActive(true);
             _canvasGroup.alpha = 0f;
-            _canvasGroup.DOFade(1f, _duration);
+            _canvasGroup.DOFade(1f, _fadeDuration);
         }
 
         public void Close()
         {
-            _canvasGroup.DOFade(0f, 0.5f)
+            _canvasGroup.DOFade(0f, _fadeDuration)
                 .OnComplete
                 (
                     () =>

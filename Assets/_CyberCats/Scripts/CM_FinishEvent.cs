@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class CM_FinishEvent : MonoBehaviour
 {
     public CinemachineDollyCart CM_Cart;
+    public float CM_CartSpeed = 0.1f;
     public float StartDelay = 1f;
     public bool ShowPreview = false;
 
@@ -29,6 +30,6 @@ public class CM_FinishEvent : MonoBehaviour
     }
 
     void StartPath() {
-        CM_Cart.m_Speed = 0.15f;
+        CM_Cart.m_Speed = CM_CartSpeed;
     }
 }

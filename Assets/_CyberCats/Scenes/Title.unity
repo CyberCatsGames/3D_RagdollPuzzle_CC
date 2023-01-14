@@ -450,6 +450,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5759667018070470482, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759667018665216973, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.06
+      objectReference: {fileID: 0}
     - target: {fileID: 5759667018703220762, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -497,6 +505,14 @@ PrefabInstance:
     - target: {fileID: 5759667018703220763, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
       propertyPath: m_Name
       value: BouncesWalls
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759667019570065775, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759667019881337034, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}

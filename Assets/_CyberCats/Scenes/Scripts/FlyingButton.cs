@@ -1,5 +1,5 @@
-using System;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,6 +11,8 @@ namespace _CyberCats.Scenes.Scripts
     {
         [SerializeField] private FlyingButton _prefab;
         [SerializeField] private AudioClip[] _audioClip;
+        [SerializeField] private TMP_Text _textLabel;
+        [SerializeField] private string[] _dialogs;
         [SerializeField] private int _multiplierCount = 2;
 
         [Range(0f, 0.1f)]
@@ -20,14 +22,14 @@ namespace _CyberCats.Scenes.Scripts
         private static Vector3 _currentScale;
         private static bool _isFirst = true;
         private bool _canTouch;
-        private Rigidbody _rigidbody;
+        public Rigidbody Rigidbody { get; private set; }
 
         private AudioClip RandomClip =>
             _audioClip[Random.Range(0, _audioClip.Length)];
 
         private void Awake()
         {
-            _rigidbody = GetComponent<Rigidbody>();
+            Rigidbody = GetComponent<Rigidbody>();
             _audioSource = GetComponent<AudioSource>();
 
             if (_isFirst == false)
@@ -40,14 +42,20 @@ namespace _CyberCats.Scenes.Scripts
         {
             if (_isFirst == true)
             {
-                Invoke(nameof(DoScaleAnimation), 5f);
+                Invoke(nameof(DoScaleAnimation), 8f);
+            }
+            else
+            {
+                if (_dialogs.Length > 0)
+                {
+                    _textLabel.text = _dialogs[Random.Range(0, _dialogs.Length)];
+                }
             }
         }
 
         private void DoScaleAnimation()
         {
-            print("DOScaleAnimation");
-            transform.DOScale(Vector3.one * 0.44315f, 1f).OnComplete
+            transform.DOScale(Vector3.one * 0.3f, 1f).OnComplete
             (
                 () =>
                 {
@@ -60,8 +68,8 @@ namespace _CyberCats.Scenes.Scripts
 
         private void OnMouseEnter()
         {
-            _rigidbody.isKinematic = false;
-            _rigidbody.AddForceAtPosition(1000f * Vector3.one, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            Rigidbody.isKinematic = false;
+            Rigidbody.AddForceAtPosition(500f * Vector3.one, Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
 
         private void OnMouseDown()
@@ -71,7 +79,9 @@ namespace _CyberCats.Scenes.Scripts
 
             for (int i = 0; i < _multiplierCount; i++)
             {
-                Instantiate(_prefab, transform.position, Quaternion.identity);
+                FlyingButton flyingButton = Instantiate
+                    (_prefab, transform.position + Vector3.one * Random.Range(-2f, 2f), Quaternion.identity);
+                flyingButton.Rigidbody.AddForce(Vector3.one * Random.Range(-2f, 2f) * 20f);
             }
 
             _audioSource.PlayOneShot(RandomClip);

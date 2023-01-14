@@ -2,10 +2,8 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace CodeBase.HeroComponents
-{
-    public class HeroHealth : MonoBehaviour
-    {
+namespace CodeBase.HeroComponents {
+    public class HeroHealth : MonoBehaviour {
         [SerializeField] private int _value;
         [SerializeField] private UnityEvent _onTakeDamage;
 
@@ -14,13 +12,15 @@ namespace CodeBase.HeroComponents
 
         public event Action Changed;
 
-        private void Awake()
-        {
+        private void Awake() {
             Max = _value;
         }
 
-        public void TakeDamage(int damage)
-        {
+        [ContextMenu("TakeDamageDebug")]
+        public void TakeDamageDebug() {
+            TakeDamage(1);
+        }
+        public void TakeDamage(int damage) {
             if (_value <= 0)
                 return;
 
@@ -28,5 +28,6 @@ namespace CodeBase.HeroComponents
             _value -= damage;
             Changed?.Invoke();
         }
+
     }
 }

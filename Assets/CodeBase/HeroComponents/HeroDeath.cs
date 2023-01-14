@@ -36,7 +36,8 @@ namespace CodeBase.HeroComponents
             Die();
         }
 
-        private void Die()
+        [ContextMenu("Die")]
+        public void Die()
         {
             _onDeath?.Invoke();
             _isDied = true;

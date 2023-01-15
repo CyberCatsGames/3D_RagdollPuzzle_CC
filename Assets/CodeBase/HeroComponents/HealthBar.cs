@@ -5,11 +5,11 @@ namespace CodeBase.HeroComponents
 {
     public class HealthBar : MonoBehaviour
     {
-        [SerializeField] private Slider _bar;
+        [SerializeField] private Image _bar;
 
         public void SetValue(int current, int max)
         {
-            _bar.value = (float)current / max;
+            _bar.fillAmount = (float)current / max;
         }
     }
 }

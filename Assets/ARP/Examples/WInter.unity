@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2685308, g: 0.46447867, b: 0.61467874, a: 1}
+  m_IndirectSpecularColor: {r: 0.26852533, g: 0.46447325, b: 0.6146784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9981,7 +9981,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5152657002782364821}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &967015689
 GameObject:
@@ -46020,7 +46020,7 @@ RectTransform:
   m_Children:
   - {fileID: 9136814092869143306}
   m_Father: {fileID: 5152657002782364821}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -49116,7 +49116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4297942864417409252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51960,8 +51960,8 @@ RectTransform:
   - {fileID: 5152657002251185244}
   - {fileID: 419952587}
   - {fileID: 948311117}
-  - {fileID: 956096222}
   - {fileID: 966806131685226935}
+  - {fileID: 956096222}
   - {fileID: 2284068475934055455}
   - {fileID: 5037099809972010527}
   - {fileID: 794135137}
@@ -52056,7 +52056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5160354299752745940
 Transform:
   m_ObjectHideFlags: 0
@@ -77081,7 +77081,8 @@ MonoBehaviour:
     \u043F\u0440\u0430\u0432\u043E\u0439 - Right Mouse\n\u041D\u0430\u043A\u043B\u043E\u043D\u0438\u0442\u044C\u0441\u044F
     - Mouse Up & Down\n\u041B\u0435\u0432\u044B\u0439 \u043A\u043E\u0440\u043E\u043D\u043D\u044B\u0439
     - Q\n\u041F\u0440\u0430\u0432\u044B\u0439 \u043F\u043E\u0445\u043E\u0440\u043E\u043D\u043D\u044B\u0439
-    - E\n\u0420\u0435\u0441\u0442\u0430\u0440\u0442 - L"
+    - E\n\u041F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0430
+    - L"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
   m_sharedMaterial: {fileID: -3215597371038344199, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
@@ -82087,19 +82088,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 903166665260519135, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 903166665260519135, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 903166665260519135, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 393.465
       objectReference: {fileID: 0}
     - target: {fileID: 903166665260519135, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -156.27496
       objectReference: {fileID: 0}
     - target: {fileID: 1997946908098678250, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_IsActive
@@ -82111,7 +82112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1997946908381168561, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1997946909106693071, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_Value
@@ -82123,19 +82124,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6070073996303849116, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6070073996303849116, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6070073996303849116, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 393.465
       objectReference: {fileID: 0}
     - target: {fileID: 6070073996303849116, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 6220428040606671570, guid: 2e1d80b8a3234f2489cc104d64cfb8c8, type: 3}
       propertyPath: m_Alpha
@@ -82920,7 +82921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7806010831613903446
 Transform:
   m_ObjectHideFlags: 0

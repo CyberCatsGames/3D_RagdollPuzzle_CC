@@ -56,7 +56,7 @@ namespace _CyberCats.Scenes.Scripts
         private void DoScaleAnimation()
         {
             
-            transform.DOScale(Vector3.one * 0.3f, 1f).OnComplete
+            transform.DOScale(transform.localScale * 1.5f, 1f).OnComplete
             (
                 () =>
                 {

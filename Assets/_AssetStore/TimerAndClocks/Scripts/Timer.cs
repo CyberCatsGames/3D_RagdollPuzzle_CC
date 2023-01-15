@@ -9,38 +9,53 @@
     public class Timer : MonoBehaviour
     {
         #region Variables
+
         [Tooltip("Controls if the timer is Counting or Disabled.")]
         public TimerState timerState;
+
         [Tooltip("Controls if the timer will count-up, count-down, or count-up infinitely.")]
         public TimerType timerType;
+
         [Tooltip("Time the timer will start from.")]
         public double startTime;
+
         [Tooltip("Time the timer will stop at.")]
         public double finishTime;
+
         [Tooltip("Rate at which the timer adds or subtracts time.")]
         [Range(0, 10000)]
         public float timerSpeed = 1;
+
         [Tooltip("Timer will auto restart when complete.")]
         public bool loop;
+
         [Tooltip("Timer will run as a clock and output system time.")]
         public bool useSystemTime;
+
         [Tooltip("Create a list of custom events, the timer will trigger when the assigned time is reached.")]
         public TimeEvent[] timeEvents;
+
         [Tooltip("A UnityEvent that can trigger custom scripting functions when time is up.")]
         public UnityEvent timesUpEvent;
+
         [Tooltip("Sets Time.timescale to 0 when time is up.")]
         public bool setZeroTimescale;
+
         [Tooltip("Assign a default Unity UI Text or Text Mesh Pro UGUI component.")]
         public TimerTextType textType;
+
         [Tooltip("Assign a UI Text component to output a formatted string.")]
         public Text timerTextDefault;
+
         [Tooltip("Assign a Text Mesh Pro UGUI component to output a formatted string.")]
         public TextMeshProUGUI timerTextTMPUGUI;
+
         [Tooltip("Toggle specific time value fields in the output string.")]
         public DisplayOptions displayOptions;
+
         [Tooltip("Toggle the leading zero on specific time value fields in the output string.")]
         public LeadingZero leadingZero;
-        
+
         public int day;
         public int hour;
         public int minute;
@@ -49,9 +64,11 @@
         public string formattedString;
         private double gameTime;
         private string ms, s, m, d, h;
+
         #endregion
 
         #region Primary Timer Logic
+
         void Start()
         {
             ClampGameTime();
@@ -82,6 +99,7 @@
                     CountUpTimeEvents();
                 }
             }
+
             UpdateUIText();
         }
 
@@ -127,7 +145,7 @@
                     if (gameTime <= timeEvents[i].eventTime)
                     {
                         timeEvents[i].wasTriggered = true;
-                        timeEvents[i].timeEvent.Invoke();
+                        timeEvents[i].timeEvent?.Invoke();
                     }
                 }
             }
@@ -185,9 +203,11 @@
             if (timerType == TimerType.CountUpInfinite) d = displayOptions.days ? "{0:D3}:" : "";
             else d = displayOptions.days ? "{0:D0}:" : "";
         }
+
         #endregion
 
         #region Public Timer Methods
+
         /// <summary>
         /// Adds the value to the timer value, use a negative value to subtract time.
         /// </summary>
@@ -207,11 +227,13 @@
                 startTime = 922337193600;
                 Debug.LogWarning("startTime exceeds max allowed value, it has been clamped to max value");
             }
+
             if (finishTime > 922337193600)
             {
                 finishTime = 922337193600;
                 Debug.LogWarning("finishTime exceeds max allowed value, it has been clamped to max value");
             }
+
             if (gameTime > 922337193600)
             {
                 gameTime = 922337193600;
@@ -295,6 +317,7 @@
             UpdateUIText();
             StartTimer();
         }
+
         #endregion
     }
 }

@@ -27,6 +27,7 @@ namespace _CyberCats.Scenes.Scripts
         private static bool _isFirst = true;
         private bool _canTouch;
         private bool _buttonToGoToNextLevelActivate;
+        private static bool _finishButtonWasCreated;
 
         public Rigidbody Rigidbody { get; private set; }
 
@@ -44,29 +45,33 @@ namespace _CyberCats.Scenes.Scripts
             {
                 _canTouch = true;
             }
-            else
-            {
-                //print("I increase level");
-                //CurrentSceneManager.Instance.IncreaseLevel();
 
-                //if (CurrentSceneManager.Instance.Level >= 2)
-                //{
-                //    _isNotFirstPlay = true;
-                //}
+            if (_isNotFirstPlay == false && CurrentSceneManager.Instance.Level >= 1)
+            {
+                _isNotFirstPlay = true;
             }
         }
 
         private void Start()
         {
-            if (_isNotFirstPlay == true)
+            if (_isNotFirstPlay == true && _isFirst)
             {
+                print("Press it if you're petuh");
                 _textLabel.text = "Нажми если Петух";
+
+                if (_isFirst == true)
+                {
+                    Invoke(nameof(DoScaleAnimation), 15f);
+                }
             }
             else
             {
+                if (_finishButtonWasCreated == true)
+                    return;
+
                 if (_isFirst == true)
                 {
-                    Invoke(nameof(DoScaleAnimation), 5f);
+                    Invoke(nameof(DoScaleAnimation), 15f);
                 }
                 else
                 {
@@ -122,8 +127,15 @@ namespace _CyberCats.Scenes.Scripts
             }
             else
             {
-                FlyingButton flyingButton = Instantiate(_prefab, Vector3.zero, Quaternion.identity);
+                if (_finishButtonWasCreated == true)
+                    return;
+                _finishButtonWasCreated = true;
+                print("Instatiation");
+                Vector3 targetPosition = new Vector3(80.63f, 0f, -843.346f);
+                print(targetPosition);
+                FlyingButton flyingButton = Instantiate(_prefab, targetPosition, Quaternion.identity);
                 flyingButton._textLabel.text = "Ну тебя понял, пендос значит\nНу жми...";
+                flyingButton.transform.localScale = Vector3.one * 7f;
                 _buttonToGoToNextLevelActivate = true;
             }
 
@@ -141,7 +153,8 @@ namespace _CyberCats.Scenes.Scripts
 
         private void OnDestroy()
         {
-            _isFirst = false;
+            _finishButtonWasCreated = false;
+            _isFirst = true;
         }
     }
 }

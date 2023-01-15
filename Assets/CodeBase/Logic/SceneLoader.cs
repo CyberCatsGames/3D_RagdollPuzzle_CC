@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using CodeBase.Enemies;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,6 +26,8 @@ namespace CodeBase.Logic
 
         private IEnumerator LoadScene(string sceneName)
         {
+            CurrentSceneManager.Instance.IncreaseLevel();
+
             AsyncOperation waitToLoad = SceneManager.LoadSceneAsync(sceneName);
 
             while (waitToLoad.isDone != true)

@@ -43,7 +43,7 @@ namespace _CyberCats.Scenes.Scripts
         {
             if (_isFirst == true)
             {
-                Invoke(nameof(DoScaleAnimation), 1f);
+                Invoke(nameof(DoScaleAnimation), 5f);
             }
             else
             {
@@ -56,7 +56,7 @@ namespace _CyberCats.Scenes.Scripts
 
         private void DoScaleAnimation()
         {
-            transform.DOScale(transform.localScale * 1.5f, 1f).OnComplete
+            transform.DOScale(new Vector3(0.25f, 0.2f, 1f), 1f).OnComplete
             (
                 () =>
                 {

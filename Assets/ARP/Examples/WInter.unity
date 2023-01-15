@@ -4360,6 +4360,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2999321}
     m_Modifications:
+    - target: {fileID: 5759667018665216973, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.71
+      objectReference: {fileID: 0}
     - target: {fileID: 5759667018703220762, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4419,6 +4423,14 @@ PrefabInstance:
     - target: {fileID: 5759667018703220763, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
       propertyPath: m_Name
       value: BouncesWalls
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759667019570065775, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759667019881337034, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd142b72f6527fb439b9f2a0d7239fa8, type: 3}
@@ -11064,26 +11076,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2999321}
     m_Modifications:
-    - target: {fileID: 3814226890740292495, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814226890740292495, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814226890740292495, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010956561107893138, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010956561107893138, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: de930b65999d828499910320bbc29dde, type: 2}
     - target: {fileID: 7010956561263887702, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
       propertyPath: m_Camera
       value: 
@@ -11097,24 +11089,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.18308
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18308
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.18308
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0079727
+      value: -6.9
       objectReference: {fileID: 0}
     - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11146,10 +11126,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010956561361709469, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010956561975248215, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

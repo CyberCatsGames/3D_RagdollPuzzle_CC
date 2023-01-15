@@ -9,7 +9,6 @@ namespace CodeBase
         [SerializeField] private UnityEvent _stay;
         [SerializeField] private UnityEvent _exit;
         [SerializeField] private UnityEvent _win;
-        [SerializeField] private UnityEvent _alone;
         
         [SerializeField] private LayerMask _layer;
 
@@ -26,7 +25,7 @@ namespace CodeBase
                 }
                 else {
                     print("alone");
-                    _alone?.Invoke();
+                    _enter?.Invoke();
                 }
                 
             }

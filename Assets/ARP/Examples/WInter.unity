@@ -3114,6 +3114,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 8642083923045365987}
     m_Modifications:
     - target: {fileID: 223681313709832242, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: _maxTimeToOpen
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 223681313709832242, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: _minTimeToOpen
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 223681313709832242, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
       propertyPath: _dialogs.Array.size
       value: 77
       objectReference: {fileID: 0}
@@ -3507,6 +3515,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9131042637299202225, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
+    - target: {fileID: 9131042637299202225, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3215597371038344199, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
 --- !u!4 &580625108 stripped
@@ -46922,6 +46938,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 8027803189937625013}
     m_Modifications:
     - target: {fileID: 223681313709832242, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: _maxTimeToOpen
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 223681313709832242, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: _minTimeToOpen
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 223681313709832242, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
       propertyPath: _dialogs.Array.size
       value: 77
       objectReference: {fileID: 0}
@@ -47324,6 +47348,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 398797555}
+    - target: {fileID: 9131042637299202225, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: m_fontSize
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131042637299202225, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
+    - target: {fileID: 9131042637299202225, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131042637299202225, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3215597371038344199, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e0fd6f7ff113ec41985694cba6deb38, type: 3}
 --- !u!1 &2021441910331746814

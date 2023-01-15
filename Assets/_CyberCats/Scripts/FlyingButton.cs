@@ -24,8 +24,8 @@ namespace _CyberCats.Scenes.Scripts
         private bool _canTouch;
         public Rigidbody Rigidbody { get; private set; }
 
-        private AudioClip RandomClip =>
-            _audioClip[Random.Range(0, _audioClip.Length)];
+        //private AudioClip RandomClip =>
+        //    _audioClip[Random.Range(0, _audioClip.Length)];
 
         private void Awake()
         {
@@ -42,7 +42,7 @@ namespace _CyberCats.Scenes.Scripts
         {
             if (_isFirst == true)
             {
-                Invoke(nameof(DoScaleAnimation), 8f);
+                Invoke(nameof(DoScaleAnimation), 1f);
             }
             else
             {
@@ -55,6 +55,7 @@ namespace _CyberCats.Scenes.Scripts
 
         private void DoScaleAnimation()
         {
+            
             transform.DOScale(Vector3.one * 0.3f, 1f).OnComplete
             (
                 () =>
@@ -84,7 +85,7 @@ namespace _CyberCats.Scenes.Scripts
                 flyingButton.Rigidbody.AddForce(Vector3.one * Random.Range(-2f, 2f) * 20f);
             }
 
-            _audioSource.PlayOneShot(RandomClip);
+            //_audioSource.PlayOneShot(RandomClip);
             _currentScale -= Vector3.one * _decreaseScale;
         }
 

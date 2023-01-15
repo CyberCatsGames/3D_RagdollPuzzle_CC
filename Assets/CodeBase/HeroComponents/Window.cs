@@ -33,7 +33,6 @@ namespace CodeBase.HeroComponents
 
         private void OnDisable()
         {
-            Cursor.lockState = CursorLockMode.Locked;
             _first.onClick.RemoveListener(RestartLevel);
             _second.onClick.RemoveListener(RestartLevel);
         }

@@ -27,17 +27,7 @@ namespace ARP.APR.Scripts
             //Knockout by impact
             if(APR_Player.canBeKnockoutByImpact && col.relativeVelocity.magnitude > APR_Player.requiredForceToBeKO)
             {
-                APR_Player.ActivateRagdoll();
-            
-                if(APR_Player.SoundSource != null)
-                {
-                    if(!APR_Player.SoundSource.isPlaying && APR_Player.Hits != null)
-                    {
-                        int i = Random.Range(0, APR_Player.Hits.Length);
-                        APR_Player.SoundSource.clip = APR_Player.Hits[i];
-                        APR_Player.SoundSource.Play();
-                    }
-                }
+                PlayImpactSound();
             }
         
             //Sound on impact
@@ -52,6 +42,18 @@ namespace ARP.APR.Scripts
                         APR_Player.SoundSource.clip = APR_Player.Impacts[i];
                         APR_Player.SoundSource.Play();
                     }
+                }
+            }
+        }
+
+        public void PlayImpactSound() {
+            APR_Player.ActivateRagdoll();
+
+            if (APR_Player.SoundSource != null) {
+                if (!APR_Player.SoundSource.isPlaying && APR_Player.Hits != null) {
+                    int i = Random.Range(0, APR_Player.Hits.Length);
+                    APR_Player.SoundSource.clip = APR_Player.Hits[i];
+                    APR_Player.SoundSource.Play();
                 }
             }
         }

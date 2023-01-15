@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &634759171162189927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3814226890740292495}
+  m_Layer: 0
+  m_Name: Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3814226890740292495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634759171162189927}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7010956561107893136}
+  - {fileID: 7010956561263887689}
+  m_Father: {fileID: 7010956561361709469}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &7010956561107893137
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,12 +58,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7010956561107893137}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.76}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.059999943}
   m_LocalScale: {x: 8.6191, y: 4.389363, z: 8.6191}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7010956561361709469}
+  m_Father: {fileID: 3814226890740292495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7010956561107893141
@@ -61,7 +94,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,12 +143,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7010956561263887701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4.82}
   m_LocalScale: {x: 1.0481738, y: 1.0481738, z: 1.0481738}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7010956561975248214}
-  m_Father: {fileID: 7010956561361709469}
+  m_Father: {fileID: 3814226890740292495}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -211,16 +244,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7010956561361709466}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44315, y: 0.44315, z: 0.44315}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7010956561107893136}
-  - {fileID: 7010956561263887689}
+  - {fileID: 3814226890740292495}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!65 &7010956561361709468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -232,8 +264,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8, y: 4.1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.498123, y: 6.0777926, z: 1}
+  m_Center: {x: -0.09601593, y: 0.028057843, z: 0}
 --- !u!54 &7010956561361709471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -359,15 +391,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 7010956561361709470}
-  _audioClip:
-  - {fileID: 8300000, guid: 7db27f5d1c8484c2d825e807e48f1104, type: 3}
-  - {fileID: 8300000, guid: a6156f72c9f39409fbeb21e9a89739dc, type: 3}
-  - {fileID: 8300000, guid: 07fb7f6e73b944a4792a16333ad9edb1, type: 3}
+  _audioClip: []
   _textLabel: {fileID: 7010956561975248201}
   _dialogs:
-  - "\u0425\u0443\u0439"
-  - "\u0416\u043E\u043F\u0430"
-  - "\u041F\u0435\u0442\u0443\u0445"
+  - "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C"
+  - "A\u0445\u0430\u0445"
+  - "\u041D\u0430\u0441 \u0431\u043E\u043B\u044C\u0448\u0435"
+  - "\u041F\u043E\u043F\u0430\u043B\u0441\u044F"
+  - "\u041B\u0443\u0437\u0435\u0440"
   _multiplierCount: 2
   _decreaseScale: 0.0053
 --- !u!1 &7010956561975248215

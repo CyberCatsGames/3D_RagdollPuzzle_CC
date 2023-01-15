@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26854017, g: 0.46486598, b: 0.61360925, a: 1}
+  m_IndirectSpecularColor: {r: 0.26852533, g: 0.46447325, b: 0.6146784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2846,7 +2846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:10
+  m_text: 05:50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
   m_sharedMaterial: {fileID: -3215597371038344199, guid: 6d01ad71399124496b2c5cf37f35a7ab, type: 2}
@@ -17368,11 +17368,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: minute
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: second
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: textType
@@ -17384,7 +17384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: startTime
-      value: 10
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timerState
@@ -17392,7 +17392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: formattedString
-      value: 00:10
+      value: 05:50
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: leadingZero.days

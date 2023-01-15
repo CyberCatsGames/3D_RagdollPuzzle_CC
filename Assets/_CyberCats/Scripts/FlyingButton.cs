@@ -46,13 +46,13 @@ namespace _CyberCats.Scenes.Scripts
             }
             else
             {
-                print("I increase level");
-                CurrentSceneManager.Instance.IncreaseLevel();
+                //print("I increase level");
+                //CurrentSceneManager.Instance.IncreaseLevel();
 
-                if (CurrentSceneManager.Instance.Level >= 2)
-                {
-                    _isNotFirstPlay = true;
-                }
+                //if (CurrentSceneManager.Instance.Level >= 2)
+                //{
+                //    _isNotFirstPlay = true;
+                //}
             }
         }
 

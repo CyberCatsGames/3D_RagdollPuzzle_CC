@@ -1,14 +1,27 @@
 
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.Events;
+using Unity.VisualScripting;
 
-public class CY_VideoPlayer : MonoBehaviour
-{
+public class CY_VideoPlayer : MonoBehaviour {
     [SerializeField] private VideoPlayer _videoPlayer;
     [SerializeField] private GameObject _bG_Url;
     [SerializeField] private GameObject _bG_Gif;
-    private bool _isPlaying;
 
+    public UnityEvent FinishEvent;
+    private bool _isPlaying;
+    public bool DefaultUrl = true;
+
+    public VideoClip[] clips;
+
+    private void OnEnable() {
+        if (!DefaultUrl) {
+            _videoPlayer.clip = clips[Random.Range(0, clips.Length-1)];
+        }
+
+        _videoPlayer.loopPointReached += EndReached;
+    }
     private void Update() {
         if (!_isPlaying) {
             if (_videoPlayer.isPrepared) {
@@ -24,5 +37,9 @@ public class CY_VideoPlayer : MonoBehaviour
 
     private void ShowVideo() {
         _isPlaying = true;
+    }
+
+    void EndReached(UnityEngine.Video.VideoPlayer vp) {
+        FinishEvent?.Invoke();
     }
 }

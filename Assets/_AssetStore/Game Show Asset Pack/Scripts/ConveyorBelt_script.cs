@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AssetStore.Game_Show_Asset_Pack.Scripts
+namespace _AssetStore.Game_Show_Asset_Pack.Scripts
 {
     public class ConveyorBelt_script : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AssetStore.Game_Show_Asset_Pack.Scripts
+namespace _AssetStore.Game_Show_Asset_Pack.Scripts
 {
     public class Rotation_physics_script : MonoBehaviour
     {

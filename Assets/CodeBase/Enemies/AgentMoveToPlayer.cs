@@ -14,6 +14,7 @@ namespace CodeBase.Enemies
 
         private HeroHealth nearHero;
         private HeroHealth[] _heroes;
+        private bool _canMove;
 
         private HeroHealth NearHero
         {
@@ -40,10 +41,14 @@ namespace CodeBase.Enemies
         private void Start()
         {
             _heroes = FindObjectsOfType<HeroHealth>();
+            _enemyAnimator.StopMoving();
         }
 
         private void Update()
         {
+            if (_canMove == false)
+                return;
+
             _agent.destination = NearHero.transform.position;
 
             if (ShouldMove())
@@ -61,6 +66,11 @@ namespace CodeBase.Enemies
         {
             float distance = Vector3.Distance(nearHero.transform.position, transform.position);
             return distance > 3f;
+        }
+
+        public void Enabled()
+        {
+            _canMove = true;
         }
     }
 }

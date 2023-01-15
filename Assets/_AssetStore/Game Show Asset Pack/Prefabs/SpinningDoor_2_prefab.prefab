@@ -1,5 +1,63 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1533073926765894171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708332646551757618}
+  - component: {fileID: 763393845680014946}
+  - component: {fileID: 5569503237981999367}
+  m_Layer: 18
+  m_Name: CheckRange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708332646551757618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533073926765894171}
+  m_LocalRotation: {x: 0.112535864, y: 0.19626781, z: -0.740545, w: 0.6327779}
+  m_LocalPosition: {x: 279.4119, y: -10.251193, z: -55.345924}
+  m_LocalScale: {x: 2.8497121, y: 2.8497124, z: 2.8497124}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5618243494963791543}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &763393845680014946
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533073926765894171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5569503237981999367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533073926765894171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fbc97b29f3474c983c64bc69d5e25b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5094646628573715469
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +90,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6825765398035646599}
+  - {fileID: 1708332646551757618}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,7 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd2bb3a12dc4273b90d0962de6577b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _triggerObserver: {fileID: 5569503237981999367}
   _duration: 4
+  _delay: 7.5
 --- !u!1 &8115979085948353893
 GameObject:
   m_ObjectHideFlags: 0

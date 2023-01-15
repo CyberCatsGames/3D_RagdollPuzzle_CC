@@ -1,7 +1,9 @@
 using System;
+using CodeBase.Enemies;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 namespace _CyberCats.Scenes.Scripts
@@ -15,6 +17,7 @@ namespace _CyberCats.Scenes.Scripts
         [SerializeField] private TMP_Text _textLabel;
         [SerializeField] private string[] _dialogs;
         [SerializeField] private int _multiplierCount = 2;
+        [SerializeField] private UnityEvent _onClickOnSuperButtonToNextLevel;
 
         [Range(0f, 0.1f)]
         [SerializeField] private float _decreaseScale = 0.05f;
@@ -23,10 +26,14 @@ namespace _CyberCats.Scenes.Scripts
         private static Vector3 _currentScale;
         private static bool _isFirst = true;
         private bool _canTouch;
+        private bool _buttonToGoToNextLevelActivate;
+
         public Rigidbody Rigidbody { get; private set; }
 
         //private AudioClip RandomClip =>
         //    _audioClip[Random.Range(0, _audioClip.Length)];
+
+        private bool _isNotFirstPlay;
 
         private void Awake()
         {
@@ -37,19 +44,36 @@ namespace _CyberCats.Scenes.Scripts
             {
                 _canTouch = true;
             }
+            else
+            {
+                print("I increase level");
+                CurrentSceneManager.Instance.IncreaseLevel();
+
+                if (CurrentSceneManager.Instance.Level >= 2)
+                {
+                    _isNotFirstPlay = true;
+                }
+            }
         }
 
         private void Start()
         {
-            if (_isFirst == true)
+            if (_isNotFirstPlay == true)
             {
-                Invoke(nameof(DoScaleAnimation), 5f);
+                _textLabel.text = "Нажми если Петух";
             }
             else
             {
-                if (_dialogs.Length > 0)
+                if (_isFirst == true)
                 {
-                    _textLabel.text = _dialogs[Random.Range(0, _dialogs.Length)];
+                    Invoke(nameof(DoScaleAnimation), 5f);
+                }
+                else
+                {
+                    if (_dialogs.Length > 0)
+                    {
+                        _textLabel.text = _dialogs[Random.Range(0, _dialogs.Length)];
+                    }
                 }
             }
         }
@@ -69,20 +93,38 @@ namespace _CyberCats.Scenes.Scripts
 
         private void OnMouseEnter()
         {
+            if (_isNotFirstPlay == true)
+                return;
+
             Rigidbody.isKinematic = false;
             Rigidbody.AddForceAtPosition(500f * Vector3.one, Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
 
         private void OnMouseDown()
         {
+            if (_buttonToGoToNextLevelActivate == true)
+            {
+                _buttonToGoToNextLevelActivate = false;
+                _onClickOnSuperButtonToNextLevel?.Invoke();
+            }
+
             if (_canTouch == false)
                 return;
 
-            for (int i = 0; i < _multiplierCount; i++)
+            if (_isNotFirstPlay == false)
             {
-                FlyingButton flyingButton = Instantiate
-                    (_prefab, transform.position + Vector3.one * Random.Range(-2f, 2f), Quaternion.identity);
-                flyingButton.Rigidbody.AddForce(Vector3.one * Random.Range(-2f, 2f) * 20f);
+                for (int i = 0; i < _multiplierCount; i++)
+                {
+                    FlyingButton flyingButton = Instantiate
+                        (_prefab, transform.position + Vector3.one * Random.Range(-2f, 2f), Quaternion.identity);
+                    flyingButton.Rigidbody.AddForce(Vector3.one * Random.Range(-2f, 2f) * 20f);
+                }
+            }
+            else
+            {
+                FlyingButton flyingButton = Instantiate(_prefab, Vector3.zero, Quaternion.identity);
+                flyingButton._textLabel.text = "Ну тебя понял, пендос значит\nНу жми...";
+                _buttonToGoToNextLevelActivate = true;
             }
 
             //_audioSource.PlayOneShot(RandomClip);

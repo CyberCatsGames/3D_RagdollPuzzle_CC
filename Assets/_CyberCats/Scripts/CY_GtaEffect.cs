@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using CodeBase.HeroComponents;
 using UnityEngine;
@@ -56,4 +57,6 @@ public class CY_GtaEffect : MonoBehaviour
         LosePanel.Instance.Show();
         gameObject.SetActive(false);
     }
+
+
 }

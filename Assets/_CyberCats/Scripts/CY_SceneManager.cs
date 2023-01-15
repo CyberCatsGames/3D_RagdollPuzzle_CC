@@ -12,13 +12,13 @@ public class CY_SceneManager : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("LoadTimes") == 0) {
+        //if (PlayerPrefs.GetInt("LoadTimes") == 0) {
             _titleScenePanel.gameObject.SetActive(true);
-        } else {
-            _titleScenePanel.gameObject.SetActive(false);
-            _curtain.gameObject.SetActive(true);
-            _bgMusic.Play();
-        }
+        //} else {
+        //    _titleScenePanel.gameObject.SetActive(false);
+        //    _curtain.gameObject.SetActive(true);
+        //    _bgMusic.Play();
+        //}
     }
 
     public void Update()

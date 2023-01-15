@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -55,7 +56,6 @@ namespace _CyberCats.Scenes.Scripts
 
         private void DoScaleAnimation()
         {
-            
             transform.DOScale(transform.localScale * 1.5f, 1f).OnComplete
             (
                 () =>
@@ -95,6 +95,11 @@ namespace _CyberCats.Scenes.Scripts
                 return;
 
             transform.localScale = _currentScale;
+        }
+
+        private void OnDestroy()
+        {
+            _isFirst = false;
         }
     }
 }

@@ -43,7 +43,6 @@ Transform:
   - {fileID: 8282310224454804411}
   - {fileID: 4979196375589030888}
   - {fileID: 2486463217339273011}
-  - {fileID: 7009146962089844669}
   - {fileID: 7009146962512905318}
   - {fileID: 7009146963148461147}
   - {fileID: 7009146962176174026}
@@ -100,7 +99,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -146,6 +145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_1_prefab (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4642504221449742708, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
 --- !u!4 &3093631376550333555 stripped
@@ -160,13 +163,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (29)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -232,7 +239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3289925290178962912, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3289925290178962912, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
       propertyPath: m_LocalScale.x
@@ -290,6 +297,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 028f3723830e3e1469777fd00a8fc7da, type: 2}
+    - target: {fileID: 8867169778986613464, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
 --- !u!4 &2686823336760788126 stripped
@@ -434,6 +445,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463216078878015 stripped
@@ -512,6 +527,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513742882058662 stripped
@@ -530,9 +549,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x
@@ -606,7 +629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -664,6 +687,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513742698656674 stripped
@@ -678,13 +705,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (39)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -758,7 +789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -812,6 +843,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 91.032
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463216211273984 stripped
@@ -828,7 +863,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -873,6 +908,10 @@ PrefabInstance:
     - target: {fileID: 2973699549870705915, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_1_prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642504221449742708, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
+      propertyPath: _duration
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
@@ -936,6 +975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.201
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463216277034554 stripped
@@ -956,7 +999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -1014,6 +1057,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743195594853 stripped
@@ -1092,6 +1139,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743204192472 stripped
@@ -1112,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -1170,6 +1221,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743099636468 stripped
@@ -1232,6 +1287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_1_prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4642504221449742708, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
 --- !u!4 &3093631376911160391 stripped
@@ -1252,7 +1311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3289925290178962912, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3289925290178962912, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1310,6 +1369,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 028f3723830e3e1469777fd00a8fc7da, type: 2}
+    - target: {fileID: 8867169778986613464, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
 --- !u!4 &2686823337194520865 stripped
@@ -1324,6 +1387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 3098300432540394036, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5094646628573715469, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
       propertyPath: m_Name
       value: SpinningDoor_2_prefab (3)
@@ -1402,6 +1469,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 3098300432540394036, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5094646628573715469, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
       propertyPath: m_Name
       value: SpinningDoor_2_prefab
@@ -1548,6 +1619,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -9.546
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463216647525022 stripped
@@ -1564,7 +1639,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1626,6 +1701,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fe7dcbf821af09346b1d412d37f43552, type: 2}
+    - target: {fileID: 4642504221449742708, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
 --- !u!4 &3093631376115982262 stripped
@@ -1640,13 +1719,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (34)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,7 +1803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1774,6 +1857,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.838
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463216842247127 stripped
@@ -1802,7 +1889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1856,6 +1943,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.869
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463216796514148 stripped
@@ -1874,9 +1965,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x
@@ -1944,13 +2039,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (38)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2010,13 +2109,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (32)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2076,13 +2179,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (35)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2148,7 +2255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -2206,6 +2313,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513742465295588 stripped
@@ -2220,9 +2331,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 3560336462384857479, guid: 73a766ebf1e750c4f9f3542c5bbc16d1, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4722454518697613748, guid: 73a766ebf1e750c4f9f3542c5bbc16d1, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4722454518697613748, guid: 73a766ebf1e750c4f9f3542c5bbc16d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -2287,72 +2402,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4722454518697613748, guid: 73a766ebf1e750c4f9f3542c5bbc16d1, type: 3}
   m_PrefabInstance: {fileID: 639979574476352807}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &639979574481491751
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 639979573930195499}
-    m_Modifications:
-    - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_Name
-      value: SpinningBaton_2_prefab (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -24.629913
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.4094944
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 44.701477
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99373513
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.11176152
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -12.834
-      objectReference: {fileID: 0}
-    - target: {fileID: 8786514980086871029, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fe7dcbf821af09346b1d412d37f43552, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
---- !u!4 &7009146962089844669 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
-  m_PrefabInstance: {fileID: 639979574481491751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &639979574485572956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2408,6 +2457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_1_prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4642504221449742708, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
 --- !u!4 &3093631377616128797 stripped
@@ -2426,9 +2479,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x
@@ -2502,7 +2559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_LocalScale.x
@@ -2592,7 +2649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_LocalScale.x
@@ -2666,7 +2723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -2724,6 +2781,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743858945346 stripped
@@ -2744,7 +2805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -2802,6 +2863,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743884969166 stripped
@@ -2816,13 +2881,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (37)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2882,13 +2951,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (31)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2954,7 +3027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -3012,6 +3085,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513744228961977 stripped
@@ -3048,15 +3125,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.81
+      value: -2.53
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.94
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.12
+      value: 8.56
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3090,6 +3167,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463217339273011 stripped
@@ -3110,7 +3191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 8795819572454687269, guid: 8ea6fd149b15ef64a9686d893b907d6e, type: 3}
       propertyPath: m_LocalScale.x
@@ -3178,13 +3259,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (27)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3258,7 +3343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -3312,6 +3397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.713
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463217479078650 stripped
@@ -3330,9 +3419,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x
@@ -3400,6 +3493,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 3560336462384857479, guid: 73a766ebf1e750c4f9f3542c5bbc16d1, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4722454518697613748, guid: 73a766ebf1e750c4f9f3542c5bbc16d1, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3468,7 +3565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -3526,6 +3623,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743482077997 stripped
@@ -3542,7 +3643,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 2454289519880967745, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3600,6 +3701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_1_prefab (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4642504221449742708, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d952a626b26c2234da2d16fd7ac6389b, type: 3}
 --- !u!4 &3093631377118666442 stripped
@@ -3620,7 +3725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3289925290178962912, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 3289925290178962912, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3662,6 +3767,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.328
       objectReference: {fileID: 0}
+    - target: {fileID: 8867169778986613464, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e263a9d87a624f488fb0a199335c48b, type: 3}
 --- !u!4 &2686823335136047393 stripped
@@ -3686,7 +3795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 799473266299445343, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
       propertyPath: m_LocalScale.x
@@ -3744,6 +3853,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ed94922e709fb04aac1ccd28fdb10f1, type: 2}
+    - target: {fileID: 2741471815040638602, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4e867dacc1c248b57666224f51b71, type: 3}
 --- !u!4 &286513743386664281 stripped
@@ -3758,6 +3871,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 3098300432540394036, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5094646628573715469, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
       propertyPath: m_Name
       value: SpinningDoor_2_prefab (1)
@@ -3850,7 +3967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3053470333014614995, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -3904,6 +4021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -13.307
       objectReference: {fileID: 0}
+    - target: {fileID: 8948954405159163933, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e53e7db983ca64ebd1e12a45236b6d, type: 3}
 --- !u!4 &2486463217937169600 stripped
@@ -3918,6 +4039,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab
@@ -3996,13 +4121,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (40)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4062,13 +4191,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (33)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4132,9 +4265,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x
@@ -4202,6 +4339,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 3098300432540394036, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5094646628573715469, guid: 2e02265d114ef5a41b2b766f6e565c6b, type: 3}
       propertyPath: m_Name
       value: SpinningDoor_2_prefab
@@ -4280,13 +4421,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639979573930195499}
     m_Modifications:
+    - target: {fileID: 2212784882631311371, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7128921831114166816, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_Name
       value: SpinningBaton_2_prefab (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 7612442430610475162, guid: fdb30f5c43186a244a79d4b940702e25, type: 3}
       propertyPath: m_LocalScale.x
@@ -4362,9 +4507,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x
@@ -4436,9 +4585,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpinningBaton_4_prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1780419071023125763, guid: 0af6e82385929774a8b92299c171c590, type: 3}
+      propertyPath: _duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 1922393997272997811, guid: 0af6e82385929774a8b92299c171c590, type: 3}
       propertyPath: m_LocalScale.x

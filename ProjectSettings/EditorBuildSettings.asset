@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ARP/Examples/Winter.unity
+    path: Assets/ARP/Examples/WInter.unity
     guid: 4fe27765fbdcb4a2d8025c211242f575
-  - enabled: 1
-    path: Assets/_CyberCats/Scenes/Title.unity
-    guid: f45205fc68bb4ed43abfafeedd6df6c4
   m_configObjects: {}

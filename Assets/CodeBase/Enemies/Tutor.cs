@@ -16,6 +16,7 @@ namespace CodeBase.Enemies
         private void Awake()
         {
             _input = FindObjectOfType<Naruto>().GetComponent<APRController>();
+            _canvasGroup.alpha = 0f;
         }
 
         private void Start()

@@ -50,8 +50,7 @@ namespace ARP.APR.Scripts
         void Start()
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        
+            //Cursor.visible = false;
             cam = Camera.main;
         
             offset = cam.transform.position;

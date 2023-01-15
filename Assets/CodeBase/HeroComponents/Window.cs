@@ -26,12 +26,14 @@ namespace CodeBase.HeroComponents
 
         private void OnEnable()
         {
+            Cursor.lockState = CursorLockMode.None;
             _first.onClick.AddListener(RestartLevel);
             _second.onClick.AddListener(RestartLevel);
         }
 
         private void OnDisable()
         {
+            Cursor.lockState = CursorLockMode.Locked;
             _first.onClick.RemoveListener(RestartLevel);
             _second.onClick.RemoveListener(RestartLevel);
         }

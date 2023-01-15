@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _triggerObserver: {fileID: 6628749246853275457}
   _duration: 4
-  _delay: 7.5
+  _checkRange: {fileID: 3214820584090856850}
 --- !u!1 &9068829443953226494
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9068829443953226494}
   m_LocalRotation: {x: 0.8790967, y: -0.27753782, z: -0.30873394, w: 0.23419052}
-  m_LocalPosition: {x: -30.381464, y: -100.49213, z: 98.88767}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5764389, y: 1.5764388, z: 1.5764384}
   m_ConstrainProportionsScale: 0
   m_Children: []

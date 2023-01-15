@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _triggerObserver: {fileID: 7855172514138037273}
   _duration: 4
-  _delay: 7.5
+  _checkRange: {fileID: 8675126747453103301}
 --- !u!1 &5583357340560917958
 GameObject:
   m_ObjectHideFlags: 0

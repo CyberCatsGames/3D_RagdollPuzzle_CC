@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Animations;
 using ARP.APR.Scripts;
 using CodeBase.Enemies;
@@ -19,24 +20,7 @@ public class CY_VideoPlayer : MonoBehaviour
     public bool DefaultUrl = true;
 
     public VideoClip[] clips;
-    private EnemyAnimator[] _enemies;
-
-
-    private void Start()
-    {
-        _enemies = FindObjectsOfType<EnemyAnimator>();
-
-        Invoke(nameof(TurnOn), 1f);
-    }
-
-    private void TurnOn()
-    {
-        foreach (EnemyAnimator enemyAnimator in _enemies)
-        {
-            enemyAnimator.gameObject.SetActive(true);
-        }
-    }
-
+    
     private void OnEnable()
     {
         if (!DefaultUrl)
@@ -67,13 +51,6 @@ public class CY_VideoPlayer : MonoBehaviour
 
     private void ShowVideo()
     {
-        foreach (var VARIABLE in _enemies)
-        {
-            VARIABLE.gameObject.SetActive(false);
-        }
-
-        FindObjectOfType<Naruto>().GetComponentInChildren<APRController>().useControls = false;
-
         _isPlaying = true;
     }
 
@@ -81,13 +58,9 @@ public class CY_VideoPlayer : MonoBehaviour
     {
         FinishEvent?.Invoke();
 
-        foreach (var VARIABLE in _enemies)
+        foreach (var VARIABLE in FindObjectsOfType<EnemyAttack>())
         {
             VARIABLE.gameObject.SetActive(true);
         }
-
-        FindObjectOfType<Naruto>().GetComponentInChildren<APRController>().useControls = true;
-        _isPlaying = false;
-        Invoke(nameof(TurnOn), 1f);
     }
 }

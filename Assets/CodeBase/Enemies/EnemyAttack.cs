@@ -65,7 +65,9 @@ namespace CodeBase.Enemies
 
         private void StartAttack()
         {
-            _audioSource.PlayOneShot(_audioClip);
+            if (UnityEngine.Random.Range(0, 4) == 1)
+                _audioSource.PlayOneShot(_audioClip);
+
             _isAttacking = true;
 
             switch (UnityEngine.Random.Range(0, 5))

@@ -61,7 +61,7 @@ namespace _CyberCats.Scenes.Scripts
 
                 if (_isFirst == true)
                 {
-                    Invoke(nameof(DoScaleAnimation), 15f);
+                    Invoke(nameof(DoScaleAnimation), 8f);
                 }
             }
             else
@@ -135,7 +135,7 @@ namespace _CyberCats.Scenes.Scripts
                 print(targetPosition);
                 FlyingButton flyingButton = Instantiate(_prefab, targetPosition, Quaternion.identity);
                 flyingButton._textLabel.text = "Ну тебя понял, пендос значит\nНу жми...";
-                flyingButton.transform.localScale = Vector3.one * 7f;
+                flyingButton.transform.localScale = Vector3.one;
                 _buttonToGoToNextLevelActivate = true;
             }
 
@@ -145,7 +145,7 @@ namespace _CyberCats.Scenes.Scripts
 
         private void Update()
         {
-            if (_isFirst == true)
+            if (_isFirst == true || _finishButtonWasCreated)
                 return;
 
             transform.localScale = _currentScale;

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace CodeBase.Enemies
 {
@@ -19,6 +20,9 @@ namespace CodeBase.Enemies
             }
             else
                 Destroy(gameObject);
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
         }
 
         public void IncreaseLevel()

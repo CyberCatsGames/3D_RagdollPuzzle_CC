@@ -2124,7 +2124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timeEvents.Array.data[0].timeEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timesUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2173,7 +2173,7 @@ PrefabInstance:
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timeEvents.Array.data[0].timeEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1222861344}
+      objectReference: {fileID: 1601054775}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timeEvents.Array.data[0].timeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2220,7 +2220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timeEvents.Array.data[0].timeEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
       propertyPath: timeEvents.Array.data[0].timeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2949,8 +2949,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10358,7 +10358,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1886601510316512623}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1086273353
 MonoBehaviour:
@@ -10863,11 +10863,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
---- !u!1 &1222861344 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7010956561361709466, guid: 67ccb2d79f423be49b00af7d6d368398, type: 3}
-  m_PrefabInstance: {fileID: 1222861343}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1227270241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17350,6 +17345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1601054777}
   - component: {fileID: 1601054776}
+  - component: {fileID: 1601054778}
   m_Layer: 0
   m_Name: GifVideoPlayer
   m_TagString: Untagged
@@ -17386,9 +17382,9 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -17405,8 +17401,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1886601510316512623}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601054778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601054775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301e937de1092ab45ab3fadb9a4e90dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPlayer: {fileID: 1601054776}
+  _urlVidepPlayer: {fileID: 1086273350}
 --- !u!1 &1609050497
 GameObject:
   m_ObjectHideFlags: 0
@@ -32372,6 +32382,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db23b1ef41814ae69cb10569072e50e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1953404626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1422908149428754, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
+  m_PrefabInstance: {fileID: 374440359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1953404627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114822636841990292, guid: 8c6da349a9cbef54193f83aab0938cfe, type: 3}
+  m_PrefabInstance: {fileID: 374440359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953404626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1debce1cfcb2a4385f76cd6ca8f981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1953404628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953404626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b629c6fea26d475cb5d12e43e1dac0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer: {fileID: 1953404627}
+  _firstSetup: 105
+  _secondSetup: 20
+  _funnyVideo: {fileID: 1086273350}
 --- !u!1 &1985956401
 GameObject:
   m_ObjectHideFlags: 0
@@ -32480,7 +32522,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1886601510316512623}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -46680,9 +46722,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1781419566}
+  - {fileID: 1601054777}
   - {fileID: 1086273352}
   - {fileID: 2003066541}
-  - {fileID: 1601054777}
   - {fileID: 472991088}
   m_Father: {fileID: 1728879023}
   m_RootOrder: 0

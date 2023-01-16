@@ -5077,5 +5077,5 @@ MonoBehaviour:
   _damageRadius: 2
   _damage: 1
   _enemyAnimator: {fileID: 419306197}
-  _audioClip: {fileID: 8300000, guid: 21e9784d4d37348c4a6d67ddebfd973f, type: 3}
+  _audioClip: {fileID: 8300000, guid: 5d1400d6b7c634f63b4f7a5089e54738, type: 3}
   _audioSource: {fileID: 778609756509828224}

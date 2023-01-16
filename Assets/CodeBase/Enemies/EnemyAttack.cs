@@ -12,6 +12,8 @@ namespace CodeBase.Enemies
         [SerializeField] private float _damageRadius = 1f;
         [SerializeField] private int _damage = 1;
         [SerializeField] private EnemyAnimator _enemyAnimator;
+        [SerializeField] private AudioClip _audioClip;
+        [SerializeField] private AudioSource _audioSource;
 
         private readonly Collider[] _results = new Collider[1];
         private Transform _heroTransform;
@@ -63,6 +65,7 @@ namespace CodeBase.Enemies
 
         private void StartAttack()
         {
+            _audioSource.PlayOneShot(_audioClip);
             _isAttacking = true;
 
             switch (UnityEngine.Random.Range(0, 5))

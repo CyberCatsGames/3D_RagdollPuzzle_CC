@@ -292,7 +292,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0593dcef02f204c67904aa5c991bc5fc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -391,7 +391,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 7010956561361709470}
-  _audioClip: []
+  _audioClip:
+  - {fileID: 8300000, guid: 0593dcef02f204c67904aa5c991bc5fc, type: 3}
+  - {fileID: 8300000, guid: 7db27f5d1c8484c2d825e807e48f1104, type: 3}
+  - {fileID: 8300000, guid: 464c622da407e4b399405b384d15b82c, type: 3}
+  - {fileID: 8300000, guid: e04cbf71b71304e0f9f5cac684d3933f, type: 3}
+  - {fileID: 8300000, guid: 2e328e2a6dccc4557afb642281c1de3a, type: 3}
+  - {fileID: 8300000, guid: 9a00cde612f5347208df24fa034cbceb, type: 3}
   _textLabel: {fileID: 7010956561975248201}
   _dialogs:
   - "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C"

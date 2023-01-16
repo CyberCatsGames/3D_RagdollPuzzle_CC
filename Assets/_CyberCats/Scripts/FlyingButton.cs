@@ -31,8 +31,8 @@ namespace _CyberCats.Scenes.Scripts
 
         public Rigidbody Rigidbody { get; private set; }
 
-        //private AudioClip RandomClip =>
-        //    _audioClip[Random.Range(0, _audioClip.Length)];
+        private AudioClip RandomClip =>
+            _audioClip[Random.Range(0, _audioClip.Length)];
 
         private bool _isNotFirstPlay;
 
@@ -139,7 +139,8 @@ namespace _CyberCats.Scenes.Scripts
                 _buttonToGoToNextLevelActivate = true;
             }
 
-            //_audioSource.PlayOneShot(RandomClip);
+            if (_audioSource.isPlaying == false)
+                _audioSource.PlayOneShot(RandomClip);
             _currentScale -= Vector3.one * _decreaseScale;
         }
 
